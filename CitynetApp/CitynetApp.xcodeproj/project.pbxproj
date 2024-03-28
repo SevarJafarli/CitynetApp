@@ -1,0 +1,813 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C5389B432BA9AD920000E39B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5389B422BA9AD920000E39B /* AppDelegate.swift */; };
+		C5389B4C2BA9AD930000E39B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5389B4B2BA9AD930000E39B /* Assets.xcassets */; };
+		C5389B4F2BA9AD930000E39B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5389B4D2BA9AD930000E39B /* LaunchScreen.storyboard */; };
+		C5389B802BA9ADD30000E39B /* CitynetNetworkKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5389B7F2BA9ADD30000E39B /* CitynetNetworkKit.framework */; };
+		C5389B812BA9ADD30000E39B /* CitynetNetworkKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C5389B7F2BA9ADD30000E39B /* CitynetNetworkKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C5389B842BA9ADD60000E39B /* CitynetUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5389B832BA9ADD60000E39B /* CitynetUIKit.framework */; };
+		C5389B852BA9ADD60000E39B /* CitynetUIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C5389B832BA9ADD60000E39B /* CitynetUIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C5389B882BA9AE710000E39B /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5389B872BA9AE710000E39B /* AppRouter.swift */; };
+		C5389B8A2BA9AE7D0000E39B /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5389B892BA9AE7D0000E39B /* AppContainer.swift */; };
+		C5389BAA2BA9B1540000E39B /* AppAssets.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5389BA92BA9B1540000E39B /* AppAssets.swift */; };
+		C5389BB12BA9B19E0000E39B /* ThemeableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5389BB02BA9B19E0000E39B /* ThemeableView.swift */; };
+		C5389BB32BA9B1BD0000E39B /* ThemeableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5389BB22BA9B1BD0000E39B /* ThemeableViewController.swift */; };
+		C5389BB52BA9B1D40000E39B /* MainNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5389BB42BA9B1D40000E39B /* MainNavigation.swift */; };
+		C5389BB72BA9B1F50000E39B /* ViewController+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5389BB62BA9B1F50000E39B /* ViewController+Navigation.swift */; };
+		C5389BC12BA9B2B20000E39B /* TabBarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5389BB92BA9B2B20000E39B /* TabBarPresenter.swift */; };
+		C5389BC22BA9B2B20000E39B /* TabBarWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5389BBA2BA9B2B20000E39B /* TabBarWorker.swift */; };
+		C5389BC32BA9B2B20000E39B /* TabBarRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5389BBB2BA9B2B20000E39B /* TabBarRouter.swift */; };
+		C5389BC42BA9B2B20000E39B /* TabBarModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5389BBC2BA9B2B20000E39B /* TabBarModels.swift */; };
+		C5389BC52BA9B2B20000E39B /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5389BBD2BA9B2B20000E39B /* TabBarViewController.swift */; };
+		C5389BC62BA9B2B20000E39B /* TabBarInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5389BBE2BA9B2B20000E39B /* TabBarInteractor.swift */; };
+		C5389BC72BA9B2B20000E39B /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5389BBF2BA9B2B20000E39B /* TabBarView.swift */; };
+		C5389BC82BA9B2B20000E39B /* TabBarConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5389BC02BA9B2B20000E39B /* TabBarConfigurator.swift */; };
+		C5D1957B2BADDBB100028BBF /* HomePagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D195732BADDBB100028BBF /* HomePagePresenter.swift */; };
+		C5D1957C2BADDBB100028BBF /* HomePageWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D195742BADDBB100028BBF /* HomePageWorker.swift */; };
+		C5D1957D2BADDBB100028BBF /* HomePageRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D195752BADDBB100028BBF /* HomePageRouter.swift */; };
+		C5D1957E2BADDBB100028BBF /* HomePageModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D195762BADDBB100028BBF /* HomePageModels.swift */; };
+		C5D1957F2BADDBB100028BBF /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D195772BADDBB100028BBF /* HomePageViewController.swift */; };
+		C5D195802BADDBB100028BBF /* HomePageInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D195782BADDBB100028BBF /* HomePageInteractor.swift */; };
+		C5D195812BADDBB100028BBF /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D195792BADDBB100028BBF /* HomePageView.swift */; };
+		C5D195822BADDBB100028BBF /* HomePageConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D1957A2BADDBB100028BBF /* HomePageConfigurator.swift */; };
+		C5D1AB912BB3EC4700ABF6D2 /* TariffsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D1AB892BB3EC4700ABF6D2 /* TariffsPresenter.swift */; };
+		C5D1AB922BB3EC4700ABF6D2 /* TariffsWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D1AB8A2BB3EC4700ABF6D2 /* TariffsWorker.swift */; };
+		C5D1AB932BB3EC4700ABF6D2 /* TariffsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D1AB8B2BB3EC4700ABF6D2 /* TariffsRouter.swift */; };
+		C5D1AB942BB3EC4700ABF6D2 /* TariffsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D1AB8C2BB3EC4700ABF6D2 /* TariffsModels.swift */; };
+		C5D1AB952BB3EC4700ABF6D2 /* TariffsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D1AB8D2BB3EC4700ABF6D2 /* TariffsViewController.swift */; };
+		C5D1AB962BB3EC4700ABF6D2 /* TariffsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D1AB8E2BB3EC4700ABF6D2 /* TariffsInteractor.swift */; };
+		C5D1AB972BB3EC4700ABF6D2 /* TariffsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D1AB8F2BB3EC4700ABF6D2 /* TariffsView.swift */; };
+		C5D1AB982BB3EC4700ABF6D2 /* TariffsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D1AB902BB3EC4700ABF6D2 /* TariffsConfigurator.swift */; };
+		C5D1AB9A2BB3ECCC00ABF6D2 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D1AB992BB3ECCC00ABF6D2 /* View+Extension.swift */; };
+		C5D1AB9E2BB3F23F00ABF6D2 /* TariffTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D1AB9D2BB3F23F00ABF6D2 /* TariffTableViewCell.swift */; };
+		C5D1ABA12BB3F29500ABF6D2 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = C5D1ABA02BB3F29500ABF6D2 /* SnapKit */; };
+		C5D1ABA32BB3FB8B00ABF6D2 /* TariffContentSingleTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D1ABA22BB3FB8B00ABF6D2 /* TariffContentSingleTile.swift */; };
+		C5D1ABA62BB3FEF300ABF6D2 /* AppPrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D1ABA52BB3FEF200ABF6D2 /* AppPrimaryButton.swift */; };
+		C5D1ABA92BB4020700ABF6D2 /* TariffModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D1ABA82BB4020700ABF6D2 /* TariffModel.swift */; };
+		C5D1ABB32BB432EE00ABF6D2 /* TariffInfoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D1ABAB2BB432EE00ABF6D2 /* TariffInfoPresenter.swift */; };
+		C5D1ABB42BB432EE00ABF6D2 /* TariffInfoWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D1ABAC2BB432EE00ABF6D2 /* TariffInfoWorker.swift */; };
+		C5D1ABB52BB432EE00ABF6D2 /* TariffInfoRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D1ABAD2BB432EE00ABF6D2 /* TariffInfoRouter.swift */; };
+		C5D1ABB62BB432EE00ABF6D2 /* TariffInfoModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D1ABAE2BB432EE00ABF6D2 /* TariffInfoModels.swift */; };
+		C5D1ABB72BB432EE00ABF6D2 /* TariffInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D1ABAF2BB432EE00ABF6D2 /* TariffInfoViewController.swift */; };
+		C5D1ABB82BB432EE00ABF6D2 /* TariffInfoInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D1ABB02BB432EE00ABF6D2 /* TariffInfoInteractor.swift */; };
+		C5D1ABB92BB432EE00ABF6D2 /* TariffInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D1ABB12BB432EE00ABF6D2 /* TariffInfoView.swift */; };
+		C5D1ABBA2BB432EE00ABF6D2 /* TariffInfoConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D1ABB22BB432EE00ABF6D2 /* TariffInfoConfigurator.swift */; };
+		C5D1ABBD2BB43C7300ABF6D2 /* TariffInfoBottomCheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D1ABBC2BB43C7300ABF6D2 /* TariffInfoBottomCheckoutView.swift */; };
+		C5D1ABBF2BB4401F00ABF6D2 /* TariffInfoToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D1ABBE2BB4401F00ABF6D2 /* TariffInfoToastView.swift */; };
+		C5D1ABC12BB447EC00ABF6D2 /* TariffCellTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D1ABC02BB447EC00ABF6D2 /* TariffCellTopView.swift */; };
+		C5D1ABC32BB449E600ABF6D2 /* TariffInfoCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D1ABC22BB449E600ABF6D2 /* TariffInfoCardView.swift */; };
+		C5D1ABC72BB535CC00ABF6D2 /* AdditionalServiceSingleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D1ABC62BB535CC00ABF6D2 /* AdditionalServiceSingleView.swift */; };
+		C5D1ABC92BB539F100ABF6D2 /* AppDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D1ABC82BB539F100ABF6D2 /* AppDivider.swift */; };
+		C5D1ABCC2BB545B800ABF6D2 /* DeleteServiceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D1ABCB2BB545B800ABF6D2 /* DeleteServiceButton.swift */; };
+		C5D1ABCF2BB548B200ABF6D2 /* TitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D1ABCE2BB548B200ABF6D2 /* TitleTableViewCell.swift */; };
+		C5D1ABD12BB548E800ABF6D2 /* Cell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D1ABD02BB548E800ABF6D2 /* Cell+Extension.swift */; };
+		C5D1ABD32BB54B4600ABF6D2 /* ToastTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D1ABD22BB54B4600ABF6D2 /* ToastTableViewCell.swift */; };
+		C5D1ABD52BB5553800ABF6D2 /* AdditionalServiceViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D1ABD42BB5553800ABF6D2 /* AdditionalServiceViewCell.swift */; };
+		C5D1ABD72BB5569800ABF6D2 /* AdditionalServicesSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D1ABD62BB5569800ABF6D2 /* AdditionalServicesSectionHeaderView.swift */; };
+		C5D1ABDB2BB559A800ABF6D2 /* TableView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D1ABDA2BB559A800ABF6D2 /* TableView+Ext.swift */; };
+		C5D1ABDD2BB5801100ABF6D2 /* AppStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D1ABDC2BB5801100ABF6D2 /* AppStepper.swift */; };
+		C5D1ABE02BB5857600ABF6D2 /* AdditionalServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D1ABDF2BB5857600ABF6D2 /* AdditionalServiceType.swift */; };
+		C5D1ABE22BB58FDE00ABF6D2 /* TitleHeaderLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D1ABE12BB58FDE00ABF6D2 /* TitleHeaderLabel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C5389B822BA9ADD30000E39B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C5389B852BA9ADD60000E39B /* CitynetUIKit.framework in Embed Frameworks */,
+				C5389B812BA9ADD30000E39B /* CitynetNetworkKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C5389B3F2BA9AD920000E39B /* CitynetApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CitynetApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5389B422BA9AD920000E39B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C5389B4B2BA9AD930000E39B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C5389B4E2BA9AD930000E39B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C5389B502BA9AD930000E39B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5389B7F2BA9ADD30000E39B /* CitynetNetworkKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CitynetNetworkKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5389B832BA9ADD60000E39B /* CitynetUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CitynetUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5389B872BA9AE710000E39B /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		C5389B892BA9AE7D0000E39B /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
+		C5389BA92BA9B1540000E39B /* AppAssets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAssets.swift; sourceTree = "<group>"; };
+		C5389BB02BA9B19E0000E39B /* ThemeableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeableView.swift; sourceTree = "<group>"; };
+		C5389BB22BA9B1BD0000E39B /* ThemeableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeableViewController.swift; sourceTree = "<group>"; };
+		C5389BB42BA9B1D40000E39B /* MainNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigation.swift; sourceTree = "<group>"; };
+		C5389BB62BA9B1F50000E39B /* ViewController+Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Navigation.swift"; sourceTree = "<group>"; };
+		C5389BB92BA9B2B20000E39B /* TabBarPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarPresenter.swift; sourceTree = "<group>"; };
+		C5389BBA2BA9B2B20000E39B /* TabBarWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarWorker.swift; sourceTree = "<group>"; };
+		C5389BBB2BA9B2B20000E39B /* TabBarRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarRouter.swift; sourceTree = "<group>"; };
+		C5389BBC2BA9B2B20000E39B /* TabBarModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarModels.swift; sourceTree = "<group>"; };
+		C5389BBD2BA9B2B20000E39B /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		C5389BBE2BA9B2B20000E39B /* TabBarInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarInteractor.swift; sourceTree = "<group>"; };
+		C5389BBF2BA9B2B20000E39B /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		C5389BC02BA9B2B20000E39B /* TabBarConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarConfigurator.swift; sourceTree = "<group>"; };
+		C5D195732BADDBB100028BBF /* HomePagePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePagePresenter.swift; sourceTree = "<group>"; };
+		C5D195742BADDBB100028BBF /* HomePageWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageWorker.swift; sourceTree = "<group>"; };
+		C5D195752BADDBB100028BBF /* HomePageRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageRouter.swift; sourceTree = "<group>"; };
+		C5D195762BADDBB100028BBF /* HomePageModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageModels.swift; sourceTree = "<group>"; };
+		C5D195772BADDBB100028BBF /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		C5D195782BADDBB100028BBF /* HomePageInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageInteractor.swift; sourceTree = "<group>"; };
+		C5D195792BADDBB100028BBF /* HomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
+		C5D1957A2BADDBB100028BBF /* HomePageConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageConfigurator.swift; sourceTree = "<group>"; };
+		C5D1AB892BB3EC4700ABF6D2 /* TariffsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TariffsPresenter.swift; sourceTree = "<group>"; };
+		C5D1AB8A2BB3EC4700ABF6D2 /* TariffsWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TariffsWorker.swift; sourceTree = "<group>"; };
+		C5D1AB8B2BB3EC4700ABF6D2 /* TariffsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TariffsRouter.swift; sourceTree = "<group>"; };
+		C5D1AB8C2BB3EC4700ABF6D2 /* TariffsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TariffsModels.swift; sourceTree = "<group>"; };
+		C5D1AB8D2BB3EC4700ABF6D2 /* TariffsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TariffsViewController.swift; sourceTree = "<group>"; };
+		C5D1AB8E2BB3EC4700ABF6D2 /* TariffsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TariffsInteractor.swift; sourceTree = "<group>"; };
+		C5D1AB8F2BB3EC4700ABF6D2 /* TariffsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TariffsView.swift; sourceTree = "<group>"; };
+		C5D1AB902BB3EC4700ABF6D2 /* TariffsConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TariffsConfigurator.swift; sourceTree = "<group>"; };
+		C5D1AB992BB3ECCC00ABF6D2 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
+		C5D1AB9D2BB3F23F00ABF6D2 /* TariffTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TariffTableViewCell.swift; sourceTree = "<group>"; };
+		C5D1ABA22BB3FB8B00ABF6D2 /* TariffContentSingleTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TariffContentSingleTile.swift; sourceTree = "<group>"; };
+		C5D1ABA52BB3FEF200ABF6D2 /* AppPrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPrimaryButton.swift; sourceTree = "<group>"; };
+		C5D1ABA82BB4020700ABF6D2 /* TariffModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TariffModel.swift; sourceTree = "<group>"; };
+		C5D1ABAB2BB432EE00ABF6D2 /* TariffInfoPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TariffInfoPresenter.swift; sourceTree = "<group>"; };
+		C5D1ABAC2BB432EE00ABF6D2 /* TariffInfoWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TariffInfoWorker.swift; sourceTree = "<group>"; };
+		C5D1ABAD2BB432EE00ABF6D2 /* TariffInfoRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TariffInfoRouter.swift; sourceTree = "<group>"; };
+		C5D1ABAE2BB432EE00ABF6D2 /* TariffInfoModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TariffInfoModels.swift; sourceTree = "<group>"; };
+		C5D1ABAF2BB432EE00ABF6D2 /* TariffInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TariffInfoViewController.swift; sourceTree = "<group>"; };
+		C5D1ABB02BB432EE00ABF6D2 /* TariffInfoInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TariffInfoInteractor.swift; sourceTree = "<group>"; };
+		C5D1ABB12BB432EE00ABF6D2 /* TariffInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TariffInfoView.swift; sourceTree = "<group>"; };
+		C5D1ABB22BB432EE00ABF6D2 /* TariffInfoConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TariffInfoConfigurator.swift; sourceTree = "<group>"; };
+		C5D1ABBC2BB43C7300ABF6D2 /* TariffInfoBottomCheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TariffInfoBottomCheckoutView.swift; sourceTree = "<group>"; };
+		C5D1ABBE2BB4401F00ABF6D2 /* TariffInfoToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TariffInfoToastView.swift; sourceTree = "<group>"; };
+		C5D1ABC02BB447EC00ABF6D2 /* TariffCellTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TariffCellTopView.swift; sourceTree = "<group>"; };
+		C5D1ABC22BB449E600ABF6D2 /* TariffInfoCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TariffInfoCardView.swift; sourceTree = "<group>"; };
+		C5D1ABC62BB535CC00ABF6D2 /* AdditionalServiceSingleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionalServiceSingleView.swift; sourceTree = "<group>"; };
+		C5D1ABC82BB539F100ABF6D2 /* AppDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDivider.swift; sourceTree = "<group>"; };
+		C5D1ABCB2BB545B800ABF6D2 /* DeleteServiceButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteServiceButton.swift; sourceTree = "<group>"; };
+		C5D1ABCE2BB548B200ABF6D2 /* TitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTableViewCell.swift; sourceTree = "<group>"; };
+		C5D1ABD02BB548E800ABF6D2 /* Cell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cell+Extension.swift"; sourceTree = "<group>"; };
+		C5D1ABD22BB54B4600ABF6D2 /* ToastTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastTableViewCell.swift; sourceTree = "<group>"; };
+		C5D1ABD42BB5553800ABF6D2 /* AdditionalServiceViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionalServiceViewCell.swift; sourceTree = "<group>"; };
+		C5D1ABD62BB5569800ABF6D2 /* AdditionalServicesSectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionalServicesSectionHeaderView.swift; sourceTree = "<group>"; };
+		C5D1ABDA2BB559A800ABF6D2 /* TableView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableView+Ext.swift"; sourceTree = "<group>"; };
+		C5D1ABDC2BB5801100ABF6D2 /* AppStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStepper.swift; sourceTree = "<group>"; };
+		C5D1ABDF2BB5857600ABF6D2 /* AdditionalServiceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionalServiceType.swift; sourceTree = "<group>"; };
+		C5D1ABE12BB58FDE00ABF6D2 /* TitleHeaderLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleHeaderLabel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C5389B3C2BA9AD920000E39B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5D1ABA12BB3F29500ABF6D2 /* SnapKit in Frameworks */,
+				C5389B842BA9ADD60000E39B /* CitynetUIKit.framework in Frameworks */,
+				C5389B802BA9ADD30000E39B /* CitynetNetworkKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C5389B362BA9AD920000E39B = {
+			isa = PBXGroup;
+			children = (
+				C5389B412BA9AD920000E39B /* CitynetApp */,
+				C5389B402BA9AD920000E39B /* Products */,
+				C5389B7E2BA9ADD30000E39B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C5389B402BA9AD920000E39B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C5389B3F2BA9AD920000E39B /* CitynetApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C5389B412BA9AD920000E39B /* CitynetApp */ = {
+			isa = PBXGroup;
+			children = (
+				C5D1ABA72BB401FD00ABF6D2 /* Models */,
+				C5D195832BADE07E00028BBF /* Views */,
+				C5389BAD2BA9B1840000E39B /* Extensions */,
+				C5389BAC2BA9B1800000E39B /* Scenes */,
+				C5389BAB2BA9B17B0000E39B /* Helpers */,
+				C5389BA72BA9B1360000E39B /* Supporting */,
+				C5389B862BA9AE600000E39B /* App */,
+				C5389BA82BA9B1440000E39B /* Resources */,
+				C5389B502BA9AD930000E39B /* Info.plist */,
+			);
+			path = CitynetApp;
+			sourceTree = "<group>";
+		};
+		C5389B7E2BA9ADD30000E39B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C5389B832BA9ADD60000E39B /* CitynetUIKit.framework */,
+				C5389B7F2BA9ADD30000E39B /* CitynetNetworkKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C5389B862BA9AE600000E39B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C5389B422BA9AD920000E39B /* AppDelegate.swift */,
+				C5389B872BA9AE710000E39B /* AppRouter.swift */,
+				C5389B892BA9AE7D0000E39B /* AppContainer.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		C5389BA72BA9B1360000E39B /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				C5389B4D2BA9AD930000E39B /* LaunchScreen.storyboard */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		C5389BA82BA9B1440000E39B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C5389B4B2BA9AD930000E39B /* Assets.xcassets */,
+				C5389BA92BA9B1540000E39B /* AppAssets.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C5389BAB2BA9B17B0000E39B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C5389BAF2BA9B18F0000E39B /* Navigation */,
+				C5389BAE2BA9B18B0000E39B /* Theme */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		C5389BAC2BA9B1800000E39B /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				C5D1ABAA2BB432E100ABF6D2 /* TariffInfo */,
+				C5D1AB882BB3EC3300ABF6D2 /* Tariffs */,
+				C5D195722BADDB9F00028BBF /* Home */,
+				C5389BB82BA9B27E0000E39B /* TabBar */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		C5389BAD2BA9B1840000E39B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C5D1AB992BB3ECCC00ABF6D2 /* View+Extension.swift */,
+				C5D1ABD02BB548E800ABF6D2 /* Cell+Extension.swift */,
+				C5D1ABDA2BB559A800ABF6D2 /* TableView+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C5389BAE2BA9B18B0000E39B /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				C5389BB02BA9B19E0000E39B /* ThemeableView.swift */,
+				C5389BB22BA9B1BD0000E39B /* ThemeableViewController.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		C5389BAF2BA9B18F0000E39B /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				C5389BB42BA9B1D40000E39B /* MainNavigation.swift */,
+				C5389BB62BA9B1F50000E39B /* ViewController+Navigation.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		C5389BB82BA9B27E0000E39B /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				C5389BB92BA9B2B20000E39B /* TabBarPresenter.swift */,
+				C5389BBA2BA9B2B20000E39B /* TabBarWorker.swift */,
+				C5389BBB2BA9B2B20000E39B /* TabBarRouter.swift */,
+				C5389BBC2BA9B2B20000E39B /* TabBarModels.swift */,
+				C5389BBD2BA9B2B20000E39B /* TabBarViewController.swift */,
+				C5389BBE2BA9B2B20000E39B /* TabBarInteractor.swift */,
+				C5389BBF2BA9B2B20000E39B /* TabBarView.swift */,
+				C5389BC02BA9B2B20000E39B /* TabBarConfigurator.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		C5D195722BADDB9F00028BBF /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C5D195732BADDBB100028BBF /* HomePagePresenter.swift */,
+				C5D195742BADDBB100028BBF /* HomePageWorker.swift */,
+				C5D195752BADDBB100028BBF /* HomePageRouter.swift */,
+				C5D195762BADDBB100028BBF /* HomePageModels.swift */,
+				C5D195772BADDBB100028BBF /* HomePageViewController.swift */,
+				C5D195782BADDBB100028BBF /* HomePageInteractor.swift */,
+				C5D195792BADDBB100028BBF /* HomePageView.swift */,
+				C5D1957A2BADDBB100028BBF /* HomePageConfigurator.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		C5D195832BADE07E00028BBF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C5D1ABA42BB3FEDD00ABF6D2 /* Buttons */,
+				C5D1ABC82BB539F100ABF6D2 /* AppDivider.swift */,
+				C5D1ABDC2BB5801100ABF6D2 /* AppStepper.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C5D1AB882BB3EC3300ABF6D2 /* Tariffs */ = {
+			isa = PBXGroup;
+			children = (
+				C5D1AB9B2BB3F22900ABF6D2 /* Views */,
+				C5D1AB892BB3EC4700ABF6D2 /* TariffsPresenter.swift */,
+				C5D1AB8A2BB3EC4700ABF6D2 /* TariffsWorker.swift */,
+				C5D1AB8B2BB3EC4700ABF6D2 /* TariffsRouter.swift */,
+				C5D1AB8C2BB3EC4700ABF6D2 /* TariffsModels.swift */,
+				C5D1AB8D2BB3EC4700ABF6D2 /* TariffsViewController.swift */,
+				C5D1AB8E2BB3EC4700ABF6D2 /* TariffsInteractor.swift */,
+				C5D1AB8F2BB3EC4700ABF6D2 /* TariffsView.swift */,
+				C5D1AB902BB3EC4700ABF6D2 /* TariffsConfigurator.swift */,
+			);
+			path = Tariffs;
+			sourceTree = "<group>";
+		};
+		C5D1AB9B2BB3F22900ABF6D2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C5D1AB9C2BB3F23000ABF6D2 /* Cells */,
+				C5D1ABA22BB3FB8B00ABF6D2 /* TariffContentSingleTile.swift */,
+				C5D1ABC02BB447EC00ABF6D2 /* TariffCellTopView.swift */,
+				C5D1ABE12BB58FDE00ABF6D2 /* TitleHeaderLabel.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C5D1AB9C2BB3F23000ABF6D2 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C5D1AB9D2BB3F23F00ABF6D2 /* TariffTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		C5D1ABA42BB3FEDD00ABF6D2 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				C5D1ABA52BB3FEF200ABF6D2 /* AppPrimaryButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		C5D1ABA72BB401FD00ABF6D2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C5D1ABA82BB4020700ABF6D2 /* TariffModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C5D1ABAA2BB432E100ABF6D2 /* TariffInfo */ = {
+			isa = PBXGroup;
+			children = (
+				C5D1ABDE2BB5856D00ABF6D2 /* Models */,
+				C5D1ABBB2BB43C5D00ABF6D2 /* Views */,
+				C5D1ABAB2BB432EE00ABF6D2 /* TariffInfoPresenter.swift */,
+				C5D1ABAC2BB432EE00ABF6D2 /* TariffInfoWorker.swift */,
+				C5D1ABAD2BB432EE00ABF6D2 /* TariffInfoRouter.swift */,
+				C5D1ABAE2BB432EE00ABF6D2 /* TariffInfoModels.swift */,
+				C5D1ABAF2BB432EE00ABF6D2 /* TariffInfoViewController.swift */,
+				C5D1ABB02BB432EE00ABF6D2 /* TariffInfoInteractor.swift */,
+				C5D1ABB12BB432EE00ABF6D2 /* TariffInfoView.swift */,
+				C5D1ABB22BB432EE00ABF6D2 /* TariffInfoConfigurator.swift */,
+			);
+			path = TariffInfo;
+			sourceTree = "<group>";
+		};
+		C5D1ABBB2BB43C5D00ABF6D2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C5D1ABCD2BB548A000ABF6D2 /* Cells */,
+				C5D1ABCA2BB5459C00ABF6D2 /* Buttons */,
+				C5D1ABBC2BB43C7300ABF6D2 /* TariffInfoBottomCheckoutView.swift */,
+				C5D1ABBE2BB4401F00ABF6D2 /* TariffInfoToastView.swift */,
+				C5D1ABC22BB449E600ABF6D2 /* TariffInfoCardView.swift */,
+				C5D1ABC62BB535CC00ABF6D2 /* AdditionalServiceSingleView.swift */,
+				C5D1ABD62BB5569800ABF6D2 /* AdditionalServicesSectionHeaderView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C5D1ABCA2BB5459C00ABF6D2 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				C5D1ABCB2BB545B800ABF6D2 /* DeleteServiceButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		C5D1ABCD2BB548A000ABF6D2 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C5D1ABCE2BB548B200ABF6D2 /* TitleTableViewCell.swift */,
+				C5D1ABD22BB54B4600ABF6D2 /* ToastTableViewCell.swift */,
+				C5D1ABD42BB5553800ABF6D2 /* AdditionalServiceViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		C5D1ABDE2BB5856D00ABF6D2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C5D1ABDF2BB5857600ABF6D2 /* AdditionalServiceType.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C5389B3E2BA9AD920000E39B /* CitynetApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5389B532BA9AD930000E39B /* Build configuration list for PBXNativeTarget "CitynetApp" */;
+			buildPhases = (
+				C5389B3B2BA9AD920000E39B /* Sources */,
+				C5389B3C2BA9AD920000E39B /* Frameworks */,
+				C5389B3D2BA9AD920000E39B /* Resources */,
+				C5389B822BA9ADD30000E39B /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CitynetApp;
+			packageProductDependencies = (
+				C5D1ABA02BB3F29500ABF6D2 /* SnapKit */,
+			);
+			productName = CitynetApp;
+			productReference = C5389B3F2BA9AD920000E39B /* CitynetApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C5389B372BA9AD920000E39B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					C5389B3E2BA9AD920000E39B = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = C5389B3A2BA9AD920000E39B /* Build configuration list for PBXProject "CitynetApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C5389B362BA9AD920000E39B;
+			packageReferences = (
+				C5D1AB9F2BB3F29500ABF6D2 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
+			productRefGroup = C5389B402BA9AD920000E39B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C5389B3E2BA9AD920000E39B /* CitynetApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C5389B3D2BA9AD920000E39B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5389B4F2BA9AD930000E39B /* LaunchScreen.storyboard in Resources */,
+				C5389B4C2BA9AD930000E39B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C5389B3B2BA9AD920000E39B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5389BC62BA9B2B20000E39B /* TabBarInteractor.swift in Sources */,
+				C5D1ABBD2BB43C7300ABF6D2 /* TariffInfoBottomCheckoutView.swift in Sources */,
+				C5389BB52BA9B1D40000E39B /* MainNavigation.swift in Sources */,
+				C5D1ABB42BB432EE00ABF6D2 /* TariffInfoWorker.swift in Sources */,
+				C5D1ABB32BB432EE00ABF6D2 /* TariffInfoPresenter.swift in Sources */,
+				C5389BC82BA9B2B20000E39B /* TabBarConfigurator.swift in Sources */,
+				C5D1ABBF2BB4401F00ABF6D2 /* TariffInfoToastView.swift in Sources */,
+				C5D1ABA92BB4020700ABF6D2 /* TariffModel.swift in Sources */,
+				C5389B8A2BA9AE7D0000E39B /* AppContainer.swift in Sources */,
+				C5D1AB982BB3EC4700ABF6D2 /* TariffsConfigurator.swift in Sources */,
+				C5D1AB922BB3EC4700ABF6D2 /* TariffsWorker.swift in Sources */,
+				C5D1957D2BADDBB100028BBF /* HomePageRouter.swift in Sources */,
+				C5D1ABDB2BB559A800ABF6D2 /* TableView+Ext.swift in Sources */,
+				C5D1ABB72BB432EE00ABF6D2 /* TariffInfoViewController.swift in Sources */,
+				C5D1ABE02BB5857600ABF6D2 /* AdditionalServiceType.swift in Sources */,
+				C5D1AB9A2BB3ECCC00ABF6D2 /* View+Extension.swift in Sources */,
+				C5389B432BA9AD920000E39B /* AppDelegate.swift in Sources */,
+				C5D195822BADDBB100028BBF /* HomePageConfigurator.swift in Sources */,
+				C5389BAA2BA9B1540000E39B /* AppAssets.swift in Sources */,
+				C5D1AB9E2BB3F23F00ABF6D2 /* TariffTableViewCell.swift in Sources */,
+				C5389BB72BA9B1F50000E39B /* ViewController+Navigation.swift in Sources */,
+				C5D1AB942BB3EC4700ABF6D2 /* TariffsModels.swift in Sources */,
+				C5D1ABE22BB58FDE00ABF6D2 /* TitleHeaderLabel.swift in Sources */,
+				C5D1ABD72BB5569800ABF6D2 /* AdditionalServicesSectionHeaderView.swift in Sources */,
+				C5D1ABC32BB449E600ABF6D2 /* TariffInfoCardView.swift in Sources */,
+				C5D1ABD12BB548E800ABF6D2 /* Cell+Extension.swift in Sources */,
+				C5D1957F2BADDBB100028BBF /* HomePageViewController.swift in Sources */,
+				C5D1AB912BB3EC4700ABF6D2 /* TariffsPresenter.swift in Sources */,
+				C5D1957C2BADDBB100028BBF /* HomePageWorker.swift in Sources */,
+				C5389BC42BA9B2B20000E39B /* TabBarModels.swift in Sources */,
+				C5389B882BA9AE710000E39B /* AppRouter.swift in Sources */,
+				C5D195812BADDBB100028BBF /* HomePageView.swift in Sources */,
+				C5389BB32BA9B1BD0000E39B /* ThemeableViewController.swift in Sources */,
+				C5D1ABCC2BB545B800ABF6D2 /* DeleteServiceButton.swift in Sources */,
+				C5389BB12BA9B19E0000E39B /* ThemeableView.swift in Sources */,
+				C5D1ABC12BB447EC00ABF6D2 /* TariffCellTopView.swift in Sources */,
+				C5D1ABA62BB3FEF300ABF6D2 /* AppPrimaryButton.swift in Sources */,
+				C5389BC32BA9B2B20000E39B /* TabBarRouter.swift in Sources */,
+				C5D1ABCF2BB548B200ABF6D2 /* TitleTableViewCell.swift in Sources */,
+				C5D1ABB62BB432EE00ABF6D2 /* TariffInfoModels.swift in Sources */,
+				C5389BC52BA9B2B20000E39B /* TabBarViewController.swift in Sources */,
+				C5D1AB972BB3EC4700ABF6D2 /* TariffsView.swift in Sources */,
+				C5D1AB952BB3EC4700ABF6D2 /* TariffsViewController.swift in Sources */,
+				C5D195802BADDBB100028BBF /* HomePageInteractor.swift in Sources */,
+				C5D1ABD32BB54B4600ABF6D2 /* ToastTableViewCell.swift in Sources */,
+				C5D1957B2BADDBB100028BBF /* HomePagePresenter.swift in Sources */,
+				C5D1ABB92BB432EE00ABF6D2 /* TariffInfoView.swift in Sources */,
+				C5D1ABD52BB5553800ABF6D2 /* AdditionalServiceViewCell.swift in Sources */,
+				C5D1ABDD2BB5801100ABF6D2 /* AppStepper.swift in Sources */,
+				C5389BC12BA9B2B20000E39B /* TabBarPresenter.swift in Sources */,
+				C5D1957E2BADDBB100028BBF /* HomePageModels.swift in Sources */,
+				C5D1ABB82BB432EE00ABF6D2 /* TariffInfoInteractor.swift in Sources */,
+				C5D1ABB52BB432EE00ABF6D2 /* TariffInfoRouter.swift in Sources */,
+				C5D1AB962BB3EC4700ABF6D2 /* TariffsInteractor.swift in Sources */,
+				C5389BC72BA9B2B20000E39B /* TabBarView.swift in Sources */,
+				C5D1ABA32BB3FB8B00ABF6D2 /* TariffContentSingleTile.swift in Sources */,
+				C5D1ABC92BB539F100ABF6D2 /* AppDivider.swift in Sources */,
+				C5D1AB932BB3EC4700ABF6D2 /* TariffsRouter.swift in Sources */,
+				C5D1ABBA2BB432EE00ABF6D2 /* TariffInfoConfigurator.swift in Sources */,
+				C5D1ABC72BB535CC00ABF6D2 /* AdditionalServiceSingleView.swift in Sources */,
+				C5389BC22BA9B2B20000E39B /* TabBarWorker.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C5389B4D2BA9AD930000E39B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C5389B4E2BA9AD930000E39B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C5389B512BA9AD930000E39B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C5389B522BA9AD930000E39B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C5389B542BA9AD930000E39B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CitynetApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.CitynetApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C5389B552BA9AD930000E39B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CitynetApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.CitynetApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C5389B3A2BA9AD920000E39B /* Build configuration list for PBXProject "CitynetApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5389B512BA9AD930000E39B /* Debug */,
+				C5389B522BA9AD930000E39B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5389B532BA9AD930000E39B /* Build configuration list for PBXNativeTarget "CitynetApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5389B542BA9AD930000E39B /* Debug */,
+				C5389B552BA9AD930000E39B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C5D1AB9F2BB3F29500ABF6D2 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C5D1ABA02BB3F29500ABF6D2 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C5D1AB9F2BB3F29500ABF6D2 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = C5389B372BA9AD920000E39B /* Project object */;
+}

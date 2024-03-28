@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "11DD3489-00BC-42CC-8074-E4EFA363F122"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "56F49B48-03F7-4763-9BE2-5FDDCDB145F6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CitynetApp/CitynetApp/Scenes/TariffInfo/TariffInfoView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "TariffInfoView"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "56F49B48-03F7-4763-9BE2-5FDDCDB145F6 - 98aaedb42e297ea"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; CitynetApp.TariffInfoBottomCheckoutView in variable initialization expression of CitynetApp.TariffInfoView.bottomCheckoutView : CitynetApp.TariffInfoBottomCheckoutView"
+                  moduleName = "CitynetApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sevarj/Work/CitynetApp/CitynetApp/CitynetApp/Scenes/TariffInfo/TariffInfoView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "92">
+               </Location>
+               <Location
+                  uuid = "56F49B48-03F7-4763-9BE2-5FDDCDB145F6 - 98aaedb42e2900b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; CitynetApp.TariffInfoBottomCheckoutView in variable initialization expression of CitynetApp.TariffInfoView.bottomCheckoutView : CitynetApp.TariffInfoBottomCheckoutView"
+                  moduleName = "CitynetApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sevarj/Work/CitynetApp/CitynetApp/CitynetApp/Scenes/TariffInfo/TariffInfoView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "48">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "27F32A8D-125C-43B0-88DA-CFCFACB69894"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CitynetApp/CitynetApp/Scenes/TariffInfo/TariffInfoView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "updateConstraints()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "27F32A8D-125C-43B0-88DA-CFCFACB69894 - c046a5bffb6faa6d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CitynetApp.TariffInfoView.updateConstraints() -&gt; ()"
+                  moduleName = "CitynetApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sevarj/Work/CitynetApp/CitynetApp/CitynetApp/Scenes/TariffInfo/TariffInfoView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "232">
+               </Location>
+               <Location
+                  uuid = "27F32A8D-125C-43B0-88DA-CFCFACB69894 - 4a0faa8af65b40bf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (SnapKit.ConstraintMaker) -&gt; () in CitynetApp.TariffInfoView.updateConstraints() -&gt; ()"
+                  moduleName = "CitynetApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sevarj/Work/CitynetApp/CitynetApp/CitynetApp/Scenes/TariffInfo/TariffInfoView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "57"
+                  endingLineNumber = "57"
+                  offsetFromSymbolStart = "60">
+               </Location>
+               <Location
+                  uuid = "27F32A8D-125C-43B0-88DA-CFCFACB69894 - c046a5bffb6faa4e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CitynetApp.TariffInfoView.updateConstraints() -&gt; ()"
+                  moduleName = "CitynetApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sevarj/Work/CitynetApp/CitynetApp/CitynetApp/Scenes/TariffInfo/TariffInfoView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "57"
+                  endingLineNumber = "57"
+                  offsetFromSymbolStart = "416">
+               </Location>
+               <Location
+                  uuid = "27F32A8D-125C-43B0-88DA-CFCFACB69894 - 4a0faa8af65b40de"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (SnapKit.ConstraintMaker) -&gt; () in CitynetApp.TariffInfoView.updateConstraints() -&gt; ()"
+                  moduleName = "CitynetApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sevarj/Work/CitynetApp/CitynetApp/CitynetApp/Scenes/TariffInfo/TariffInfoView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "60">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

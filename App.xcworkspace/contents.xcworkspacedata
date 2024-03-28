@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:CitynetUIKit/CitynetUIKit.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:CitynetNetworkKit/CitynetNetworkKit.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:CitynetApp/CitynetApp.xcodeproj">
+   </FileRef>
+</Workspace>
