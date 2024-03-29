@@ -1,47 +1,61 @@
+////
+////  HomePageViewController.swift
+////  CitynetApp
+////
+////  Created by Sevar Jafarli on 22.03.24.
+////
 //
-//  HomePageViewController.swift
-//  CitynetApp
-//
-//  Created by Sevar Jafarli on 22.03.24.
-//
-
 import UIKit
-
+//
 protocol HomePageDisplayLogic: AnyObject {
     
     func displayLoad(viewModel: HomePage.Load.ViewModel)
 }
-
 final class HomePageViewController: UIViewController {
     
     var mainView: HomePageView?
     var interactor: HomePageBusinessLogic?
     var router: (HomePageRoutingLogic & HomePageDataPassing)?
-  
+    
+    var initialTableViewTopConstraint: CGFloat = 368
+    var maxScrollOffset: CGFloat = 100
+    
+    var transactions: [TransactionModel] = [
+        .init(title: "Bakı, Aşıq Alı 40", amount: 17.99, date: "23 May 2023", type: .monthlyPayment),
+        .init(title: "Bakı, Aşıq Alı 40", amount: 37.99, date: "20 May 2023", type: .topUp),
+        .init(title: "Bakı, Aşıq Alı 40", amount: 10.99, date: "21 May 2023", type: .monthlyPayment),
+        .init(title: "Bakı, Aşıq Alı 40", amount: 17.99, date: "23 May 2023", type: .topUp),
+        .init(title: "Bakı, Aşıq Alı 40", amount: 17.99, date: "23 May 2023", type: .monthlyPayment),
+        .init(title: "Bakı, Aşıq Alı 45", amount: 17.99, date: "23 May 2023", type: .topUp),
+        .init(title: "Bakı, Aşıq Alı 40", amount: 17.99, date: "23 May 2023", type: .monthlyPayment),
+        .init(title: "Bakı, Aşıq Alı 40", amount: 17.99, date: "23 May 2023", type: .topUp),
+    ]
     
     // MARK: - Lifecycle Methods
-
+    
     override func loadView() {
         super.loadView()
-        
-        
         self.view = mainView
         mainView?.delegate = self
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
-        self.navigationController?.navigationItem.leftBarButtonItem = UIBarButtonItem(image: AppAssets.logo.load(), style: .done, target: self, action: nil)
+
+        self.navigationController?.navigationItem.leftBarButtonItem = UIBarButtonItem(image: AppAssets.logo.load()?.withTintColor(.brown, renderingMode: .alwaysTemplate), style: .done, target: self, action: nil)
         
         self.navigationController?.navigationItem.rightBarButtonItem = UIBarButtonItem(image: AppAssets.notification.load(), style: .done, target: self, action: nil)
         
         self.load()
+        
+        mainView?.tableView.delegate = self
+        mainView?.tableView.dataSource = self
+        mainView?.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
     }
-  
+    
     
     // MARK: - Public Methods
-  
+    
     func load() {
         let request = HomePage.Load.Request()
         interactor?.load(request: request)
@@ -63,122 +77,65 @@ extension HomePageViewController: HomePageViewDelegate {
     
 }
 
-import UIKit
+// MARK: - TableView Delegate & DataSource
 
-class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        view.backgroundColor = .black
-        let bottomSheetView = CustomBottomSheetView()
-        bottomSheetView.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(bottomSheetView)
-
-        NSLayoutConstraint.activate([
-            bottomSheetView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            bottomSheetView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            bottomSheetView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-            bottomSheetView.heightAnchor.constraint(equalToConstant: UIScreen.main.bounds.height - 100), // Set desired height
-        ])
+extension HomePageViewController: UITableViewDelegate, UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        Sections.allCases.count
     }
-}
-
-class CustomBottomSheetView: UIView {
-
-    private let bottomSheetClosedHeight: CGFloat = 200 // Set your desired closed height
-    private var bottomSheetOpenHeight: CGFloat = UIScreen.main.bounds.height
-
-    private var bottomSheetTopConstraint: NSLayoutConstraint!
-    private var isBottomSheetOpen = false
-
-    private lazy var contentView: UIScrollView = {
-        let scrollView = UIScrollView()
-        scrollView.backgroundColor = .white
-        scrollView.translatesAutoresizingMaskIntoConstraints = false
-        return scrollView
-    }()
-
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        setupBottomSheet()
-    }
-
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        setupBottomSheet()
-    }
-
-    private func setupBottomSheet() {
-        addSubview(contentView)
-
-        bottomSheetTopConstraint = contentView.topAnchor.constraint(equalTo: bottomAnchor, constant: -bottomSheetClosedHeight)
-
-        NSLayoutConstraint.activate([
-            contentView.leadingAnchor.constraint(equalTo: leadingAnchor),
-            contentView.trailingAnchor.constraint(equalTo: trailingAnchor),
-            contentView.bottomAnchor.constraint(equalTo: bottomAnchor),
-            contentView.heightAnchor.constraint(equalToConstant: bottomSheetOpenHeight),
-
-            bottomSheetTopConstraint,
-        ])
-
-        let gestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(handlePanGesture(_:)))
-        contentView.addGestureRecognizer(gestureRecognizer)
-
-        // Set content size and delegate for scrolling behavior
-        contentView.contentSize = CGSize(width: bounds.width, height: 1000) // Set your desired content size
-        contentView.delegate = self
-    }
-
-    @objc private func handlePanGesture(_ recognizer: UIPanGestureRecognizer) {
-        let translation = recognizer.translation(in: self)
-
-        bottomSheetTopConstraint.constant += translation.y
-
-        // Limit the bottom sheet's top constraint to valid ranges
-        if bottomSheetTopConstraint.constant < -bottomSheetOpenHeight {
-            bottomSheetTopConstraint.constant = -bottomSheetOpenHeight
-        } else if bottomSheetTopConstraint.constant > 0 {
-            bottomSheetTopConstraint.constant = 0
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        switch Sections.allCases[section] {
+        case .stories, .tariffBanner:
+            1
+        case .allOperations:
+            self.transactions.isEmpty ? 1 : self.transactions.count
         }
-
-        recognizer.setTranslation(.zero, in: self)
-
-        if recognizer.state == .ended || recognizer.state == .cancelled {
-            let middlePoint = (bottomSheetOpenHeight - bottomSheetClosedHeight) / 2
-            if bottomSheetTopConstraint.constant < -middlePoint {
-                openBottomSheet()
-            } else {
-                closeBottomSheet()
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        switch Sections.allCases[indexPath.section] {
+        case .stories:
+            let cell = tableView.dequeueReusableCell(withIdentifier: StoriesTableViewCell.reuseIdentifier, for: indexPath)
+            
+            return cell
+        case .tariffBanner:
+            let cell = tableView.dequeueReusableCell(withIdentifier: TariffBannerTableViewCell.reuseIdentifier, for: indexPath) as! TariffBannerTableViewCell
+            return cell
+            
+        case .allOperations:
+            
+            if self.transactions.isEmpty {
+                
+                let cell = tableView.dequeueReusableCell(withIdentifier: NoTransactionTableViewCell.reuseIdentifier, for: indexPath) as! NoTransactionTableViewCell
+                
+                return cell
+            }
+            else {
+                let cell = tableView.dequeueReusableCell(withIdentifier: TransactionTableViewCell.reuseIdentifier, for: indexPath) as! TransactionTableViewCell
+                
+                cell.model = self.transactions[indexPath.row]
+                return cell
+                
             }
         }
     }
-
-    private func openBottomSheet() {
-        bottomSheetTopConstraint.constant = -bottomSheetOpenHeight + bottomSheetClosedHeight
-        isBottomSheetOpen = true
-        animateBottomSheet()
-    }
-
-    private func closeBottomSheet() {
-        bottomSheetTopConstraint.constant = -bottomSheetClosedHeight
-        isBottomSheetOpen = false
-        animateBottomSheet()
-    }
-
-    private func animateBottomSheet() {
-        UIView.animate(withDuration: 0.3) {
-            self.layoutIfNeeded()
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        switch Sections.allCases[indexPath.section] {
+        case .stories:
+            152.0 + 32.0 // collectionview height + content insets from top and bottom
+        default:
+            UITableView.automaticDimension
         }
     }
-}
-
-extension CustomBottomSheetView: UIScrollViewDelegate {
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        // Keep the bottom sheet at the top position when scrolled to the top
-        if scrollView.contentOffset.y <= 0 {
-            bottomSheetTopConstraint.constant = 0
-            scrollView.contentOffset = .zero
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        switch Sections.allCases[section] {
+        case .allOperations:
+            AllTransactionsHeaderView()
+        default:
+            nil
         }
     }
+
 }

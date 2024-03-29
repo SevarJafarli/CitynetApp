@@ -30,6 +30,7 @@ public enum ColorStyle: String, CaseIterable {
     case borderColor
     case dividerColor
     case appRed
+    case navBarColor
 }
 
 extension ColorStyle {

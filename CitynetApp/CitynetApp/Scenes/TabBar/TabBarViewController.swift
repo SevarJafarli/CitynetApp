@@ -30,8 +30,10 @@ final class TabBarViewController: UITabBarController, ThemeableViewController {
         self.tabBar.tintColor = adaptiveColor(.deepCarmine500)
         self.tabBar.isTranslucent  = false
   
-        let homeVC = MainNavigation(rootViewController: ViewController())
+        let homeVC = MainNavigation(rootViewController: HomePageConfigurator.configure(HomePageViewController()))
     
+        homeVC.barTintColor = adaptiveColor(.navBarColor)
+
         homeVC.tabBarItem = UITabBarItem(title: "Ana səhifə", image: AppAssets.home.load(), tag: 0)
     
         let supportVC = UIViewController()

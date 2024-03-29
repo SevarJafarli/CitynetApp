@@ -14,7 +14,25 @@ protocol HomePageViewDelegate: AnyObject {
 final class HomePageView: UIView {
     
     weak var delegate: HomePageViewDelegate?
-    
+
+    var tableView: UITableView = {
+        let view = UITableView(frame: .zero, style: .grouped)
+        view.backgroundColor = .white
+        view.separatorStyle = .none
+        view.showsVerticalScrollIndicator = false
+        
+        view.layer.cornerRadius = 14
+        view.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
+        
+        view.register(StoriesTableViewCell.self, forCellReuseIdentifier: StoriesTableViewCell.reuseIdentifier)
+        view.register(TariffBannerTableViewCell.self, forCellReuseIdentifier: TariffBannerTableViewCell.reuseIdentifier)
+        view.register(TransactionTableViewCell.self, forCellReuseIdentifier: TransactionTableViewCell.reuseIdentifier)
+        
+        view.register(NoTransactionTableViewCell.self, forCellReuseIdentifier: NoTransactionTableViewCell.reuseIdentifier)
+        
+//        view.layer.zPosition = 2
+        return view
+    }()
     
     init() {
         super.init(frame: .zero)
@@ -29,16 +47,26 @@ final class HomePageView: UIView {
     
     override func updateConstraints() {
         super.updateConstraints()
+        
+        self.tableView.snp.updateConstraints { make in
+            make.top.equalToSuperview().offset(368)
+            make.horizontalEdges.equalToSuperview()
+            make.bottom.equalToSuperview()
+        }
     }
     
     
     // MARK: - Private
     
     private func addSubviews() {
-        //self.updateConstraints()
+        self.addSubview(self.tableView)
+        self.updateConstraints()
     }
     
     private func setupUI() {
-        self.backgroundColor = .black
+        self.backgroundColor = adaptiveColor(.navBarColor)
     }
 }
+
+
+

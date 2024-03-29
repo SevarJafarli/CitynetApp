@@ -23,3 +23,10 @@ enum HomePage {
         }
     }
 }
+
+//MARK: HomePageTableViewSections
+internal enum Sections: CaseIterable {
+    case stories
+    case tariffBanner
+    case allOperations
+}

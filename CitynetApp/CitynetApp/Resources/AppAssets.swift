@@ -46,6 +46,8 @@ public enum AppAssets: String, CaseIterable {
     case ip
     case plus
     case minus
+    case story
+    case monthlyPayment
 }
 
 extension AppAssets {

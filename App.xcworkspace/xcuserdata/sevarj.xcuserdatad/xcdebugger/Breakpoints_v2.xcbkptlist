@@ -127,7 +127,38 @@
                   endingLineNumber = "58"
                   offsetFromSymbolStart = "60">
                </Location>
+               <Location
+                  uuid = "27F32A8D-125C-43B0-88DA-CFCFACB69894 - c046a5bffb6faa2f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CitynetApp.TariffInfoView.updateConstraints() -&gt; ()"
+                  moduleName = "CitynetApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sevarj/Work/CitynetApp/CitynetApp/CitynetApp/Scenes/TariffInfo/TariffInfoView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "416">
+               </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3EA2846C-8DE6-49A6-A095-C7DC39F51E92"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CitynetApp/CitynetApp/Scenes/Home/HomePageViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "135"
+            endingLineNumber = "135"
+            landmarkName = "tableView(_:viewForHeaderInSection:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
