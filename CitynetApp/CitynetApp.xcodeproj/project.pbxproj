@@ -29,6 +29,42 @@
 		C5389BC62BA9B2B20000E39B /* TabBarInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5389BBE2BA9B2B20000E39B /* TabBarInteractor.swift */; };
 		C5389BC72BA9B2B20000E39B /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5389BBF2BA9B2B20000E39B /* TabBarView.swift */; };
 		C5389BC82BA9B2B20000E39B /* TabBarConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5389BC02BA9B2B20000E39B /* TabBarConfigurator.swift */; };
+		C56A5BD22BBA7C4700154969 /* AddressStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56A5BD12BBA7C4700154969 /* AddressStatusView.swift */; };
+		C56A5BD42BBA7E9500154969 /* AddressStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56A5BD32BBA7E9500154969 /* AddressStatus.swift */; };
+		C56A5BD62BBA826D00154969 /* AddressInfoTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56A5BD52BBA826D00154969 /* AddressInfoTile.swift */; };
+		C56A5BD82BBA854000154969 /* AddressModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56A5BD72BBA854000154969 /* AddressModel.swift */; };
+		C56A5BDA2BBA8B2600154969 /* Double+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56A5BD92BBA8B2600154969 /* Double+Ext.swift */; };
+		C56A5BDC2BBA8D6500154969 /* AppLighterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56A5BDB2BBA8D6500154969 /* AppLighterButton.swift */; };
+		C56A5BE42BBABAC400154969 /* AddressActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56A5BE32BBABAC400154969 /* AddressActionView.swift */; };
+		C56A5BE62BBAD9B100154969 /* HomePageNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56A5BE52BBAD9B100154969 /* HomePageNavigationView.swift */; };
+		C56A5BE82BBBC5A600154969 /* NotificationCountLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56A5BE72BBBC5A600154969 /* NotificationCountLabel.swift */; };
+		C56A5BEB2BBBD29200154969 /* Hero in Frameworks */ = {isa = PBXBuildFile; productRef = C56A5BEA2BBBD29200154969 /* Hero */; };
+		C56A5BF52BBBD82000154969 /* AddressDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56A5BED2BBBD82000154969 /* AddressDetailPresenter.swift */; };
+		C56A5BF62BBBD82000154969 /* AddressDetailWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56A5BEE2BBBD82000154969 /* AddressDetailWorker.swift */; };
+		C56A5BF72BBBD82000154969 /* AddressDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56A5BEF2BBBD82000154969 /* AddressDetailRouter.swift */; };
+		C56A5BF82BBBD82000154969 /* AddressDetailModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56A5BF02BBBD82000154969 /* AddressDetailModels.swift */; };
+		C56A5BF92BBBD82000154969 /* AddressDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56A5BF12BBBD82000154969 /* AddressDetailViewController.swift */; };
+		C56A5BFA2BBBD82000154969 /* AddressDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56A5BF22BBBD82000154969 /* AddressDetailInteractor.swift */; };
+		C56A5BFB2BBBD82000154969 /* AddressDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56A5BF32BBBD82000154969 /* AddressDetailView.swift */; };
+		C56A5BFC2BBBD82000154969 /* AddressDetailConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56A5BF42BBBD82000154969 /* AddressDetailConfigurator.swift */; };
+		C56A5BFF2BBBDEC100154969 /* AddressCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56A5BFE2BBBDEC100154969 /* AddressCardView.swift */; };
+		C56A5C022BBBE01F00154969 /* AddressDetailBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56A5C012BBBE01F00154969 /* AddressDetailBottomView.swift */; };
+		C56A5C042BBBFA8000154969 /* DashedLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56A5C032BBBFA8000154969 /* DashedLine.swift */; };
+		C56A5C062BBC149000154969 /* CopyTextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56A5C052BBC149000154969 /* CopyTextButton.swift */; };
+		C56A5C082BBC1AB200154969 /* AddressDetailActionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56A5C072BBC1AB200154969 /* AddressDetailActionsView.swift */; };
+		C56A5C0C2BBC1E8500154969 /* SingleAddressActionTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56A5C0B2BBC1E8400154969 /* SingleAddressActionTile.swift */; };
+		C56A5C0F2BBC21C400154969 /* AddressDetailAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56A5C0E2BBC21C400154969 /* AddressDetailAction.swift */; };
+		C56A5C112BBC3B4600154969 /* ArrowDownButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56A5C102BBC3B4600154969 /* ArrowDownButton.swift */; };
+		C56A5C192BBD333300154969 /* AddressProfitCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56A5C182BBD333300154969 /* AddressProfitCardView.swift */; };
+		C56A5C1E2BBD429500154969 /* ProfitWalletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56A5C1D2BBD429500154969 /* ProfitWalletView.swift */; };
+		C56A5C282BBD821900154969 /* ProfitAddressDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56A5C202BBD821900154969 /* ProfitAddressDetailPresenter.swift */; };
+		C56A5C292BBD821900154969 /* ProfitAddressDetailWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56A5C212BBD821900154969 /* ProfitAddressDetailWorker.swift */; };
+		C56A5C2A2BBD821900154969 /* ProfitAddressDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56A5C222BBD821900154969 /* ProfitAddressDetailRouter.swift */; };
+		C56A5C2B2BBD821900154969 /* ProfitAddressDetailModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56A5C232BBD821900154969 /* ProfitAddressDetailModels.swift */; };
+		C56A5C2C2BBD821900154969 /* ProfitAddressDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56A5C242BBD821900154969 /* ProfitAddressDetailViewController.swift */; };
+		C56A5C2D2BBD821900154969 /* ProfitAddressDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56A5C252BBD821900154969 /* ProfitAddressDetailInteractor.swift */; };
+		C56A5C2E2BBD821900154969 /* ProfitAddressDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56A5C262BBD821900154969 /* ProfitAddressDetailView.swift */; };
+		C56A5C2F2BBD821900154969 /* ProfitAddressDetailConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56A5C272BBD821900154969 /* ProfitAddressDetailConfigurator.swift */; };
 		C58FF83D2BB5A90400B8FC42 /* StoriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58FF83C2BB5A90400B8FC42 /* StoriesTableViewCell.swift */; };
 		C58FF83F2BB6804900B8FC42 /* StoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58FF83E2BB6804900B8FC42 /* StoryCollectionViewCell.swift */; };
 		C58FF8412BB6885B00B8FC42 /* TariffBannerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58FF8402BB6885B00B8FC42 /* TariffBannerTableViewCell.swift */; };
@@ -36,6 +72,8 @@
 		C58FF8462BB69B2400B8FC42 /* TransactionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58FF8452BB69B2400B8FC42 /* TransactionModel.swift */; };
 		C58FF8482BB69EFB00B8FC42 /* NoTransactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58FF8472BB69EFB00B8FC42 /* NoTransactionTableViewCell.swift */; };
 		C58FF84A2BB6A28000B8FC42 /* AllTransactionsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58FF8492BB6A28000B8FC42 /* AllTransactionsHeaderView.swift */; };
+		C58FF84E2BB6DB7700B8FC42 /* AdressCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58FF84D2BB6DB7700B8FC42 /* AdressCollectionViewCell.swift */; };
+		C58FF8502BB6E1F600B8FC42 /* AddressesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58FF84F2BB6E1F500B8FC42 /* AddressesView.swift */; };
 		C5D1957B2BADDBB100028BBF /* HomePagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D195732BADDBB100028BBF /* HomePagePresenter.swift */; };
 		C5D1957C2BADDBB100028BBF /* HomePageWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D195742BADDBB100028BBF /* HomePageWorker.swift */; };
 		C5D1957D2BADDBB100028BBF /* HomePageRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D195752BADDBB100028BBF /* HomePageRouter.swift */; };
@@ -82,6 +120,13 @@
 		C5D1ABDD2BB5801100ABF6D2 /* AppStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D1ABDC2BB5801100ABF6D2 /* AppStepper.swift */; };
 		C5D1ABE02BB5857600ABF6D2 /* AdditionalServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D1ABDF2BB5857600ABF6D2 /* AdditionalServiceType.swift */; };
 		C5D1ABE22BB58FDE00ABF6D2 /* TitleHeaderLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D1ABE12BB58FDE00ABF6D2 /* TitleHeaderLabel.swift */; };
+		C5FB85672BBE84A2009D9316 /* ViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FB85662BBE84A2009D9316 /* ViewController+Ext.swift */; };
+		C5FB856A2BBE8EC5009D9316 /* ProfitAddressDetailNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FB85692BBE8EC5009D9316 /* ProfitAddressDetailNavBar.swift */; };
+		C5FB856C2BBE95C6009D9316 /* ProfitOffersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FB856B2BBE95C6009D9316 /* ProfitOffersView.swift */; };
+		C5FB856E2BBE9834009D9316 /* BottomSeeMoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FB856D2BBE9834009D9316 /* BottomSeeMoreView.swift */; };
+		C5FB85702BBE9CE7009D9316 /* SingleProfitOfferView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FB856F2BBE9CE7009D9316 /* SingleProfitOfferView.swift */; };
+		C5FB85732BBE9F1A009D9316 /* ProfitOfferType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FB85722BBE9F1A009D9316 /* ProfitOfferType.swift */; };
+		C5FB85752BBEA46F009D9316 /* ProfitWalletContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FB85742BBEA46F009D9316 /* ProfitWalletContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -122,6 +167,41 @@
 		C5389BBE2BA9B2B20000E39B /* TabBarInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarInteractor.swift; sourceTree = "<group>"; };
 		C5389BBF2BA9B2B20000E39B /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		C5389BC02BA9B2B20000E39B /* TabBarConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarConfigurator.swift; sourceTree = "<group>"; };
+		C56A5BD12BBA7C4700154969 /* AddressStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressStatusView.swift; sourceTree = "<group>"; };
+		C56A5BD32BBA7E9500154969 /* AddressStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressStatus.swift; sourceTree = "<group>"; };
+		C56A5BD52BBA826D00154969 /* AddressInfoTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressInfoTile.swift; sourceTree = "<group>"; };
+		C56A5BD72BBA854000154969 /* AddressModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressModel.swift; sourceTree = "<group>"; };
+		C56A5BD92BBA8B2600154969 /* Double+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Ext.swift"; sourceTree = "<group>"; };
+		C56A5BDB2BBA8D6500154969 /* AppLighterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLighterButton.swift; sourceTree = "<group>"; };
+		C56A5BE32BBABAC400154969 /* AddressActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressActionView.swift; sourceTree = "<group>"; };
+		C56A5BE52BBAD9B100154969 /* HomePageNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageNavigationView.swift; sourceTree = "<group>"; };
+		C56A5BE72BBBC5A600154969 /* NotificationCountLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCountLabel.swift; sourceTree = "<group>"; };
+		C56A5BED2BBBD82000154969 /* AddressDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressDetailPresenter.swift; sourceTree = "<group>"; };
+		C56A5BEE2BBBD82000154969 /* AddressDetailWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressDetailWorker.swift; sourceTree = "<group>"; };
+		C56A5BEF2BBBD82000154969 /* AddressDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressDetailRouter.swift; sourceTree = "<group>"; };
+		C56A5BF02BBBD82000154969 /* AddressDetailModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressDetailModels.swift; sourceTree = "<group>"; };
+		C56A5BF12BBBD82000154969 /* AddressDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressDetailViewController.swift; sourceTree = "<group>"; };
+		C56A5BF22BBBD82000154969 /* AddressDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressDetailInteractor.swift; sourceTree = "<group>"; };
+		C56A5BF32BBBD82000154969 /* AddressDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressDetailView.swift; sourceTree = "<group>"; };
+		C56A5BF42BBBD82000154969 /* AddressDetailConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressDetailConfigurator.swift; sourceTree = "<group>"; };
+		C56A5BFE2BBBDEC100154969 /* AddressCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressCardView.swift; sourceTree = "<group>"; };
+		C56A5C012BBBE01F00154969 /* AddressDetailBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressDetailBottomView.swift; sourceTree = "<group>"; };
+		C56A5C032BBBFA8000154969 /* DashedLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashedLine.swift; sourceTree = "<group>"; };
+		C56A5C052BBC149000154969 /* CopyTextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyTextButton.swift; sourceTree = "<group>"; };
+		C56A5C072BBC1AB200154969 /* AddressDetailActionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressDetailActionsView.swift; sourceTree = "<group>"; };
+		C56A5C0B2BBC1E8400154969 /* SingleAddressActionTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleAddressActionTile.swift; sourceTree = "<group>"; };
+		C56A5C0E2BBC21C400154969 /* AddressDetailAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressDetailAction.swift; sourceTree = "<group>"; };
+		C56A5C102BBC3B4600154969 /* ArrowDownButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrowDownButton.swift; sourceTree = "<group>"; };
+		C56A5C182BBD333300154969 /* AddressProfitCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressProfitCardView.swift; sourceTree = "<group>"; };
+		C56A5C1D2BBD429500154969 /* ProfitWalletView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfitWalletView.swift; sourceTree = "<group>"; };
+		C56A5C202BBD821900154969 /* ProfitAddressDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfitAddressDetailPresenter.swift; sourceTree = "<group>"; };
+		C56A5C212BBD821900154969 /* ProfitAddressDetailWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfitAddressDetailWorker.swift; sourceTree = "<group>"; };
+		C56A5C222BBD821900154969 /* ProfitAddressDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfitAddressDetailRouter.swift; sourceTree = "<group>"; };
+		C56A5C232BBD821900154969 /* ProfitAddressDetailModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfitAddressDetailModels.swift; sourceTree = "<group>"; };
+		C56A5C242BBD821900154969 /* ProfitAddressDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfitAddressDetailViewController.swift; sourceTree = "<group>"; };
+		C56A5C252BBD821900154969 /* ProfitAddressDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfitAddressDetailInteractor.swift; sourceTree = "<group>"; };
+		C56A5C262BBD821900154969 /* ProfitAddressDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfitAddressDetailView.swift; sourceTree = "<group>"; };
+		C56A5C272BBD821900154969 /* ProfitAddressDetailConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfitAddressDetailConfigurator.swift; sourceTree = "<group>"; };
 		C58FF83C2BB5A90400B8FC42 /* StoriesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesTableViewCell.swift; sourceTree = "<group>"; };
 		C58FF83E2BB6804900B8FC42 /* StoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		C58FF8402BB6885B00B8FC42 /* TariffBannerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TariffBannerTableViewCell.swift; sourceTree = "<group>"; };
@@ -129,6 +209,8 @@
 		C58FF8452BB69B2400B8FC42 /* TransactionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionModel.swift; sourceTree = "<group>"; };
 		C58FF8472BB69EFB00B8FC42 /* NoTransactionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoTransactionTableViewCell.swift; sourceTree = "<group>"; };
 		C58FF8492BB6A28000B8FC42 /* AllTransactionsHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllTransactionsHeaderView.swift; sourceTree = "<group>"; };
+		C58FF84D2BB6DB7700B8FC42 /* AdressCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdressCollectionViewCell.swift; sourceTree = "<group>"; };
+		C58FF84F2BB6E1F500B8FC42 /* AddressesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressesView.swift; sourceTree = "<group>"; };
 		C5D195732BADDBB100028BBF /* HomePagePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePagePresenter.swift; sourceTree = "<group>"; };
 		C5D195742BADDBB100028BBF /* HomePageWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageWorker.swift; sourceTree = "<group>"; };
 		C5D195752BADDBB100028BBF /* HomePageRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageRouter.swift; sourceTree = "<group>"; };
@@ -174,6 +256,13 @@
 		C5D1ABDC2BB5801100ABF6D2 /* AppStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStepper.swift; sourceTree = "<group>"; };
 		C5D1ABDF2BB5857600ABF6D2 /* AdditionalServiceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionalServiceType.swift; sourceTree = "<group>"; };
 		C5D1ABE12BB58FDE00ABF6D2 /* TitleHeaderLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleHeaderLabel.swift; sourceTree = "<group>"; };
+		C5FB85662BBE84A2009D9316 /* ViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Ext.swift"; sourceTree = "<group>"; };
+		C5FB85692BBE8EC5009D9316 /* ProfitAddressDetailNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfitAddressDetailNavBar.swift; sourceTree = "<group>"; };
+		C5FB856B2BBE95C6009D9316 /* ProfitOffersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfitOffersView.swift; sourceTree = "<group>"; };
+		C5FB856D2BBE9834009D9316 /* BottomSeeMoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSeeMoreView.swift; sourceTree = "<group>"; };
+		C5FB856F2BBE9CE7009D9316 /* SingleProfitOfferView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleProfitOfferView.swift; sourceTree = "<group>"; };
+		C5FB85722BBE9F1A009D9316 /* ProfitOfferType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfitOfferType.swift; sourceTree = "<group>"; };
+		C5FB85742BBEA46F009D9316 /* ProfitWalletContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfitWalletContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +273,7 @@
 				C5D1ABA12BB3F29500ABF6D2 /* SnapKit in Frameworks */,
 				C5389B842BA9ADD60000E39B /* CitynetUIKit.framework in Frameworks */,
 				C5389B802BA9ADD30000E39B /* CitynetNetworkKit.framework in Frameworks */,
+				C56A5BEB2BBBD29200154969 /* Hero in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +361,8 @@
 		C5389BAC2BA9B1800000E39B /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				C56A5C1F2BBD820800154969 /* ProfitAddressDetail */,
+				C56A5BEC2BBBD80C00154969 /* AddressDetail */,
 				C5D1ABAA2BB432E100ABF6D2 /* TariffInfo */,
 				C5D1AB882BB3EC3300ABF6D2 /* Tariffs */,
 				C5D195722BADDB9F00028BBF /* Home */,
@@ -285,6 +377,8 @@
 				C5D1AB992BB3ECCC00ABF6D2 /* View+Extension.swift */,
 				C5D1ABD02BB548E800ABF6D2 /* Cell+Extension.swift */,
 				C5D1ABDA2BB559A800ABF6D2 /* TableView+Ext.swift */,
+				C56A5BD92BBA8B2600154969 /* Double+Ext.swift */,
+				C5FB85662BBE84A2009D9316 /* ViewController+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -322,11 +416,87 @@
 			path = TabBar;
 			sourceTree = "<group>";
 		};
+		C56A5BEC2BBBD80C00154969 /* AddressDetail */ = {
+			isa = PBXGroup;
+			children = (
+				C56A5C0D2BBC21B500154969 /* Models */,
+				C56A5C002BBBE01600154969 /* Views */,
+				C56A5BED2BBBD82000154969 /* AddressDetailPresenter.swift */,
+				C56A5BEE2BBBD82000154969 /* AddressDetailWorker.swift */,
+				C56A5BEF2BBBD82000154969 /* AddressDetailRouter.swift */,
+				C56A5BF02BBBD82000154969 /* AddressDetailModels.swift */,
+				C56A5BF12BBBD82000154969 /* AddressDetailViewController.swift */,
+				C56A5BF22BBBD82000154969 /* AddressDetailInteractor.swift */,
+				C56A5BF32BBBD82000154969 /* AddressDetailView.swift */,
+				C56A5BF42BBBD82000154969 /* AddressDetailConfigurator.swift */,
+			);
+			path = AddressDetail;
+			sourceTree = "<group>";
+		};
+		C56A5BFD2BBBDEB000154969 /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				C56A5BFE2BBBDEC100154969 /* AddressCardView.swift */,
+				C56A5C182BBD333300154969 /* AddressProfitCardView.swift */,
+			);
+			path = Cards;
+			sourceTree = "<group>";
+		};
+		C56A5C002BBBE01600154969 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C56A5C012BBBE01F00154969 /* AddressDetailBottomView.swift */,
+				C56A5C072BBC1AB200154969 /* AddressDetailActionsView.swift */,
+				C56A5C0B2BBC1E8400154969 /* SingleAddressActionTile.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C56A5C0D2BBC21B500154969 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C56A5C0E2BBC21C400154969 /* AddressDetailAction.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C56A5C1C2BBD428100154969 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				C5FB85762BBEA473009D9316 /* ProfitWallet */,
+				C5FB856D2BBE9834009D9316 /* BottomSeeMoreView.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		C56A5C1F2BBD820800154969 /* ProfitAddressDetail */ = {
+			isa = PBXGroup;
+			children = (
+				C5FB85712BBE9F0D009D9316 /* Models */,
+				C5FB85682BBE8EB6009D9316 /* Views */,
+				C56A5C202BBD821900154969 /* ProfitAddressDetailPresenter.swift */,
+				C56A5C212BBD821900154969 /* ProfitAddressDetailWorker.swift */,
+				C56A5C222BBD821900154969 /* ProfitAddressDetailRouter.swift */,
+				C56A5C232BBD821900154969 /* ProfitAddressDetailModels.swift */,
+				C56A5C242BBD821900154969 /* ProfitAddressDetailViewController.swift */,
+				C56A5C252BBD821900154969 /* ProfitAddressDetailInteractor.swift */,
+				C56A5C262BBD821900154969 /* ProfitAddressDetailView.swift */,
+				C56A5C272BBD821900154969 /* ProfitAddressDetailConfigurator.swift */,
+			);
+			path = ProfitAddressDetail;
+			sourceTree = "<group>";
+		};
 		C58FF83A2BB5A8EA00B8FC42 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				C58FF83B2BB5A8F100B8FC42 /* Cells */,
 				C58FF8492BB6A28000B8FC42 /* AllTransactionsHeaderView.swift */,
+				C58FF84F2BB6E1F500B8FC42 /* AddressesView.swift */,
+				C56A5BD12BBA7C4700154969 /* AddressStatusView.swift */,
+				C56A5BD52BBA826D00154969 /* AddressInfoTile.swift */,
+				C56A5BE32BBABAC400154969 /* AddressActionView.swift */,
+				C56A5BE52BBAD9B100154969 /* HomePageNavigationView.swift */,
+				C56A5BE72BBBC5A600154969 /* NotificationCountLabel.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -334,11 +504,8 @@
 		C58FF83B2BB5A8F100B8FC42 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				C58FF83C2BB5A90400B8FC42 /* StoriesTableViewCell.swift */,
-				C58FF83E2BB6804900B8FC42 /* StoryCollectionViewCell.swift */,
-				C58FF8402BB6885B00B8FC42 /* TariffBannerTableViewCell.swift */,
-				C58FF8422BB6956000B8FC42 /* TransactionTableViewCell.swift */,
-				C58FF8472BB69EFB00B8FC42 /* NoTransactionTableViewCell.swift */,
+				C58FF84C2BB6DB5B00B8FC42 /* CollectionCells */,
+				C58FF84B2BB6DB5000B8FC42 /* TableCells */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -347,8 +514,30 @@
 			isa = PBXGroup;
 			children = (
 				C58FF8452BB69B2400B8FC42 /* TransactionModel.swift */,
+				C56A5BD32BBA7E9500154969 /* AddressStatus.swift */,
+				C56A5BD72BBA854000154969 /* AddressModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		C58FF84B2BB6DB5000B8FC42 /* TableCells */ = {
+			isa = PBXGroup;
+			children = (
+				C58FF83C2BB5A90400B8FC42 /* StoriesTableViewCell.swift */,
+				C58FF83E2BB6804900B8FC42 /* StoryCollectionViewCell.swift */,
+				C58FF8402BB6885B00B8FC42 /* TariffBannerTableViewCell.swift */,
+				C58FF8422BB6956000B8FC42 /* TransactionTableViewCell.swift */,
+				C58FF8472BB69EFB00B8FC42 /* NoTransactionTableViewCell.swift */,
+			);
+			path = TableCells;
+			sourceTree = "<group>";
+		};
+		C58FF84C2BB6DB5B00B8FC42 /* CollectionCells */ = {
+			isa = PBXGroup;
+			children = (
+				C58FF84D2BB6DB7700B8FC42 /* AdressCollectionViewCell.swift */,
+			);
+			path = CollectionCells;
 			sourceTree = "<group>";
 		};
 		C5D195722BADDB9F00028BBF /* Home */ = {
@@ -371,9 +560,12 @@
 		C5D195832BADE07E00028BBF /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C56A5C1C2BBD428100154969 /* Custom */,
+				C56A5BFD2BBBDEB000154969 /* Cards */,
 				C5D1ABA42BB3FEDD00ABF6D2 /* Buttons */,
 				C5D1ABC82BB539F100ABF6D2 /* AppDivider.swift */,
 				C5D1ABDC2BB5801100ABF6D2 /* AppStepper.swift */,
+				C56A5C032BBBFA8000154969 /* DashedLine.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -417,6 +609,9 @@
 			isa = PBXGroup;
 			children = (
 				C5D1ABA52BB3FEF200ABF6D2 /* AppPrimaryButton.swift */,
+				C56A5BDB2BBA8D6500154969 /* AppLighterButton.swift */,
+				C56A5C052BBC149000154969 /* CopyTextButton.swift */,
+				C56A5C102BBC3B4600154969 /* ArrowDownButton.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -486,6 +681,33 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		C5FB85682BBE8EB6009D9316 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C5FB85692BBE8EC5009D9316 /* ProfitAddressDetailNavBar.swift */,
+				C5FB856B2BBE95C6009D9316 /* ProfitOffersView.swift */,
+				C5FB856F2BBE9CE7009D9316 /* SingleProfitOfferView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C5FB85712BBE9F0D009D9316 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C5FB85722BBE9F1A009D9316 /* ProfitOfferType.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C5FB85762BBEA473009D9316 /* ProfitWallet */ = {
+			isa = PBXGroup;
+			children = (
+				C56A5C1D2BBD429500154969 /* ProfitWalletView.swift */,
+				C5FB85742BBEA46F009D9316 /* ProfitWalletContentView.swift */,
+			);
+			path = ProfitWallet;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -505,6 +727,7 @@
 			name = CitynetApp;
 			packageProductDependencies = (
 				C5D1ABA02BB3F29500ABF6D2 /* SnapKit */,
+				C56A5BEA2BBBD29200154969 /* Hero */,
 			);
 			productName = CitynetApp;
 			productReference = C5389B3F2BA9AD920000E39B /* CitynetApp.app */;
@@ -536,6 +759,7 @@
 			mainGroup = C5389B362BA9AD920000E39B;
 			packageReferences = (
 				C5D1AB9F2BB3F29500ABF6D2 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				C56A5BE92BBBD29200154969 /* XCRemoteSwiftPackageReference "Hero" */,
 			);
 			productRefGroup = C5389B402BA9AD920000E39B /* Products */;
 			projectDirPath = "";
@@ -566,13 +790,17 @@
 				C5389BC62BA9B2B20000E39B /* TabBarInteractor.swift in Sources */,
 				C5D1ABBD2BB43C7300ABF6D2 /* TariffInfoBottomCheckoutView.swift in Sources */,
 				C5389BB52BA9B1D40000E39B /* MainNavigation.swift in Sources */,
+				C58FF8502BB6E1F600B8FC42 /* AddressesView.swift in Sources */,
+				C56A5C042BBBFA8000154969 /* DashedLine.swift in Sources */,
 				C5D1ABB42BB432EE00ABF6D2 /* TariffInfoWorker.swift in Sources */,
+				C56A5C082BBC1AB200154969 /* AddressDetailActionsView.swift in Sources */,
 				C5D1ABB32BB432EE00ABF6D2 /* TariffInfoPresenter.swift in Sources */,
 				C5389BC82BA9B2B20000E39B /* TabBarConfigurator.swift in Sources */,
 				C58FF8432BB6956000B8FC42 /* TransactionTableViewCell.swift in Sources */,
 				C5D1ABBF2BB4401F00ABF6D2 /* TariffInfoToastView.swift in Sources */,
 				C5D1ABA92BB4020700ABF6D2 /* TariffModel.swift in Sources */,
 				C5389B8A2BA9AE7D0000E39B /* AppContainer.swift in Sources */,
+				C56A5C292BBD821900154969 /* ProfitAddressDetailWorker.swift in Sources */,
 				C5D1AB982BB3EC4700ABF6D2 /* TariffsConfigurator.swift in Sources */,
 				C5D1AB922BB3EC4700ABF6D2 /* TariffsWorker.swift in Sources */,
 				C58FF8462BB69B2400B8FC42 /* TransactionModel.swift in Sources */,
@@ -580,56 +808,96 @@
 				C5D1ABDB2BB559A800ABF6D2 /* TableView+Ext.swift in Sources */,
 				C5D1ABB72BB432EE00ABF6D2 /* TariffInfoViewController.swift in Sources */,
 				C5D1ABE02BB5857600ABF6D2 /* AdditionalServiceType.swift in Sources */,
+				C56A5BDA2BBA8B2600154969 /* Double+Ext.swift in Sources */,
 				C5D1AB9A2BB3ECCC00ABF6D2 /* View+Extension.swift in Sources */,
 				C5389B432BA9AD920000E39B /* AppDelegate.swift in Sources */,
+				C56A5C2E2BBD821900154969 /* ProfitAddressDetailView.swift in Sources */,
 				C58FF83D2BB5A90400B8FC42 /* StoriesTableViewCell.swift in Sources */,
+				C56A5C0C2BBC1E8500154969 /* SingleAddressActionTile.swift in Sources */,
 				C5D195822BADDBB100028BBF /* HomePageConfigurator.swift in Sources */,
 				C5389BAA2BA9B1540000E39B /* AppAssets.swift in Sources */,
 				C5D1AB9E2BB3F23F00ABF6D2 /* TariffTableViewCell.swift in Sources */,
 				C5389BB72BA9B1F50000E39B /* ViewController+Navigation.swift in Sources */,
 				C5D1AB942BB3EC4700ABF6D2 /* TariffsModels.swift in Sources */,
+				C56A5BFF2BBBDEC100154969 /* AddressCardView.swift in Sources */,
 				C5D1ABE22BB58FDE00ABF6D2 /* TitleHeaderLabel.swift in Sources */,
+				C56A5BF72BBBD82000154969 /* AddressDetailRouter.swift in Sources */,
 				C5D1ABD72BB5569800ABF6D2 /* AdditionalServicesSectionHeaderView.swift in Sources */,
 				C5D1ABC32BB449E600ABF6D2 /* TariffInfoCardView.swift in Sources */,
 				C5D1ABD12BB548E800ABF6D2 /* Cell+Extension.swift in Sources */,
+				C56A5C2A2BBD821900154969 /* ProfitAddressDetailRouter.swift in Sources */,
 				C58FF8482BB69EFB00B8FC42 /* NoTransactionTableViewCell.swift in Sources */,
 				C5D1957F2BADDBB100028BBF /* HomePageViewController.swift in Sources */,
 				C5D1AB912BB3EC4700ABF6D2 /* TariffsPresenter.swift in Sources */,
+				C5FB856E2BBE9834009D9316 /* BottomSeeMoreView.swift in Sources */,
 				C58FF84A2BB6A28000B8FC42 /* AllTransactionsHeaderView.swift in Sources */,
 				C5D1957C2BADDBB100028BBF /* HomePageWorker.swift in Sources */,
 				C5389BC42BA9B2B20000E39B /* TabBarModels.swift in Sources */,
 				C5389B882BA9AE710000E39B /* AppRouter.swift in Sources */,
+				C58FF84E2BB6DB7700B8FC42 /* AdressCollectionViewCell.swift in Sources */,
+				C5FB85732BBE9F1A009D9316 /* ProfitOfferType.swift in Sources */,
 				C5D195812BADDBB100028BBF /* HomePageView.swift in Sources */,
+				C56A5BF52BBBD82000154969 /* AddressDetailPresenter.swift in Sources */,
+				C56A5BE82BBBC5A600154969 /* NotificationCountLabel.swift in Sources */,
 				C5389BB32BA9B1BD0000E39B /* ThemeableViewController.swift in Sources */,
+				C56A5C022BBBE01F00154969 /* AddressDetailBottomView.swift in Sources */,
+				C56A5BD82BBA854000154969 /* AddressModel.swift in Sources */,
 				C5D1ABCC2BB545B800ABF6D2 /* DeleteServiceButton.swift in Sources */,
 				C5389BB12BA9B19E0000E39B /* ThemeableView.swift in Sources */,
+				C56A5BFA2BBBD82000154969 /* AddressDetailInteractor.swift in Sources */,
 				C5D1ABC12BB447EC00ABF6D2 /* TariffCellTopView.swift in Sources */,
+				C5FB856C2BBE95C6009D9316 /* ProfitOffersView.swift in Sources */,
+				C56A5C062BBC149000154969 /* CopyTextButton.swift in Sources */,
+				C56A5C2B2BBD821900154969 /* ProfitAddressDetailModels.swift in Sources */,
 				C5D1ABA62BB3FEF300ABF6D2 /* AppPrimaryButton.swift in Sources */,
 				C5389BC32BA9B2B20000E39B /* TabBarRouter.swift in Sources */,
 				C5D1ABCF2BB548B200ABF6D2 /* TitleTableViewCell.swift in Sources */,
+				C56A5C2D2BBD821900154969 /* ProfitAddressDetailInteractor.swift in Sources */,
 				C58FF83F2BB6804900B8FC42 /* StoryCollectionViewCell.swift in Sources */,
+				C56A5BFC2BBBD82000154969 /* AddressDetailConfigurator.swift in Sources */,
 				C5D1ABB62BB432EE00ABF6D2 /* TariffInfoModels.swift in Sources */,
 				C5389BC52BA9B2B20000E39B /* TabBarViewController.swift in Sources */,
 				C5D1AB972BB3EC4700ABF6D2 /* TariffsView.swift in Sources */,
 				C5D1AB952BB3EC4700ABF6D2 /* TariffsViewController.swift in Sources */,
+				C56A5BF62BBBD82000154969 /* AddressDetailWorker.swift in Sources */,
 				C5D195802BADDBB100028BBF /* HomePageInteractor.swift in Sources */,
 				C5D1ABD32BB54B4600ABF6D2 /* ToastTableViewCell.swift in Sources */,
+				C56A5BD22BBA7C4700154969 /* AddressStatusView.swift in Sources */,
 				C58FF8412BB6885B00B8FC42 /* TariffBannerTableViewCell.swift in Sources */,
 				C5D1957B2BADDBB100028BBF /* HomePagePresenter.swift in Sources */,
+				C56A5BD42BBA7E9500154969 /* AddressStatus.swift in Sources */,
+				C56A5C0F2BBC21C400154969 /* AddressDetailAction.swift in Sources */,
 				C5D1ABB92BB432EE00ABF6D2 /* TariffInfoView.swift in Sources */,
 				C5D1ABD52BB5553800ABF6D2 /* AdditionalServiceViewCell.swift in Sources */,
 				C5D1ABDD2BB5801100ABF6D2 /* AppStepper.swift in Sources */,
 				C5389BC12BA9B2B20000E39B /* TabBarPresenter.swift in Sources */,
+				C56A5BE42BBABAC400154969 /* AddressActionView.swift in Sources */,
 				C5D1957E2BADDBB100028BBF /* HomePageModels.swift in Sources */,
 				C5D1ABB82BB432EE00ABF6D2 /* TariffInfoInteractor.swift in Sources */,
+				C56A5C112BBC3B4600154969 /* ArrowDownButton.swift in Sources */,
 				C5D1ABB52BB432EE00ABF6D2 /* TariffInfoRouter.swift in Sources */,
 				C5D1AB962BB3EC4700ABF6D2 /* TariffsInteractor.swift in Sources */,
+				C56A5BF92BBBD82000154969 /* AddressDetailViewController.swift in Sources */,
+				C5FB85752BBEA46F009D9316 /* ProfitWalletContentView.swift in Sources */,
 				C5389BC72BA9B2B20000E39B /* TabBarView.swift in Sources */,
+				C56A5C2C2BBD821900154969 /* ProfitAddressDetailViewController.swift in Sources */,
+				C56A5C1E2BBD429500154969 /* ProfitWalletView.swift in Sources */,
 				C5D1ABA32BB3FB8B00ABF6D2 /* TariffContentSingleTile.swift in Sources */,
+				C56A5BFB2BBBD82000154969 /* AddressDetailView.swift in Sources */,
+				C5FB856A2BBE8EC5009D9316 /* ProfitAddressDetailNavBar.swift in Sources */,
+				C56A5BF82BBBD82000154969 /* AddressDetailModels.swift in Sources */,
+				C56A5BDC2BBA8D6500154969 /* AppLighterButton.swift in Sources */,
+				C56A5BD62BBA826D00154969 /* AddressInfoTile.swift in Sources */,
+				C56A5BE62BBAD9B100154969 /* HomePageNavigationView.swift in Sources */,
+				C56A5C282BBD821900154969 /* ProfitAddressDetailPresenter.swift in Sources */,
 				C5D1ABC92BB539F100ABF6D2 /* AppDivider.swift in Sources */,
 				C5D1AB932BB3EC4700ABF6D2 /* TariffsRouter.swift in Sources */,
+				C56A5C192BBD333300154969 /* AddressProfitCardView.swift in Sources */,
+				C56A5C2F2BBD821900154969 /* ProfitAddressDetailConfigurator.swift in Sources */,
 				C5D1ABBA2BB432EE00ABF6D2 /* TariffInfoConfigurator.swift in Sources */,
 				C5D1ABC72BB535CC00ABF6D2 /* AdditionalServiceSingleView.swift in Sources */,
+				C5FB85702BBE9CE7009D9316 /* SingleProfitOfferView.swift in Sources */,
+				C5FB85672BBE84A2009D9316 /* ViewController+Ext.swift in Sources */,
 				C5389BC22BA9B2B20000E39B /* TabBarWorker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -843,6 +1111,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		C56A5BE92BBBD29200154969 /* XCRemoteSwiftPackageReference "Hero" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/HeroTransitions/Hero.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.6.3;
+			};
+		};
 		C5D1AB9F2BB3F29500ABF6D2 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit";
@@ -854,6 +1130,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		C56A5BEA2BBBD29200154969 /* Hero */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C56A5BE92BBBD29200154969 /* XCRemoteSwiftPackageReference "Hero" */;
+			productName = Hero;
+		};
 		C5D1ABA02BB3F29500ABF6D2 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = C5D1AB9F2BB3F29500ABF6D2 /* XCRemoteSwiftPackageReference "SnapKit" */;

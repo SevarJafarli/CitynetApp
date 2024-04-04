@@ -16,9 +16,9 @@ final class AppRouter {
     
     func start() {
         self.main()
-
+        
     }
-
+    
     func main() {
         let viewController = TabBarViewController()
         let view = TabBarConfigurator.configure(viewController)
@@ -26,3 +26,5 @@ final class AppRouter {
         self.window.makeKeyAndVisible()
     }
 }
+
+

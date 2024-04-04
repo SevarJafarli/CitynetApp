@@ -5,20 +5,24 @@
 ////  Created by Sevar Jafarli on 22.03.24.
 ////
 //
+
+
 import UIKit
-//
+
+//TODO: fix warning about UITABLEVIEW LAYOUT
+
 protocol HomePageDisplayLogic: AnyObject {
     
     func displayLoad(viewModel: HomePage.Load.ViewModel)
 }
+
+
 final class HomePageViewController: UIViewController {
     
     var mainView: HomePageView?
     var interactor: HomePageBusinessLogic?
     var router: (HomePageRoutingLogic & HomePageDataPassing)?
     
-    var initialTableViewTopConstraint: CGFloat = 368
-    var maxScrollOffset: CGFloat = 100
     
     var transactions: [TransactionModel] = [
         .init(title: "Bakı, Aşıq Alı 40", amount: 17.99, date: "23 May 2023", type: .monthlyPayment),
@@ -31,6 +35,9 @@ final class HomePageViewController: UIViewController {
         .init(title: "Bakı, Aşıq Alı 40", amount: 17.99, date: "23 May 2023", type: .topUp),
     ]
     
+    var addresses: [AddressModel] = .init(repeating: .init(addressType: .notAvailable, status: .active, address: "Bakı, Aşıq Alı 40", tariffName: "İnternet (50 Mb/s) + TV", renewalDate: "15.05.2023", monthlyPayment: 27.99, balance: 14.22, subscriptions: "İnternet + TV + Telefon xətti", additions: ["Statik IP", "TV Box"], subscriberID: "56456-34743-37746"), count: 2)
+    
+  
     // MARK: - Lifecycle Methods
     
     override func loadView() {
@@ -39,20 +46,35 @@ final class HomePageViewController: UIViewController {
         mainView?.delegate = self
     }
     
+    //MARK: Hide navigation bar
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        hideNavigationBar(animated: animated)
+    }
+    
+    //MARK: show navigation bar
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        showNavigationBar(animated: animated)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        self.navigationController?.navigationItem.leftBarButtonItem = UIBarButtonItem(image: AppAssets.logo.load()?.withTintColor(.brown, renderingMode: .alwaysTemplate), style: .done, target: self, action: nil)
         
-        self.navigationController?.navigationItem.rightBarButtonItem = UIBarButtonItem(image: AppAssets.notification.load(), style: .done, target: self, action: nil)
-        
-        self.load()
+        addresses.append(.init(addressType: .available, status: .pending, address: "Bakı, Aşıq Alı 40", tariffName: "İnternet (50 Mb/s) + TV", renewalDate: "15.05.2023", monthlyPayment: 27.99, balance: 14.22, subscriptions: "İnternet + TV + Telefon xətti", additions: ["Statik IP", "TV Box"], subscriberID: "56456-34743-37746"))
         
         mainView?.tableView.delegate = self
         mainView?.tableView.dataSource = self
         mainView?.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        mainView?.addressesView.collectionView.dataSource = self
+        mainView?.addressesView.collectionView.delegate = self
+        
+        self.load()
+        
     }
-    
+
     
     // MARK: - Public Methods
     
@@ -83,6 +105,7 @@ extension HomePageViewController: UITableViewDelegate, UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         Sections.allCases.count
     }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch Sections.allCases[section] {
         case .stories, .tariffBanner:
@@ -92,14 +115,19 @@ extension HomePageViewController: UITableViewDelegate, UITableViewDataSource {
         }
     }
     
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         switch Sections.allCases[indexPath.section] {
+            
         case .stories:
             let cell = tableView.dequeueReusableCell(withIdentifier: StoriesTableViewCell.reuseIdentifier, for: indexPath)
             
             return cell
+            
         case .tariffBanner:
             let cell = tableView.dequeueReusableCell(withIdentifier: TariffBannerTableViewCell.reuseIdentifier, for: indexPath) as! TariffBannerTableViewCell
+            
+            cell.delegate = self
             return cell
             
         case .allOperations:
@@ -120,6 +148,7 @@ extension HomePageViewController: UITableViewDelegate, UITableViewDataSource {
         }
     }
     
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         switch Sections.allCases[indexPath.section] {
         case .stories:
@@ -137,5 +166,47 @@ extension HomePageViewController: UITableViewDelegate, UITableViewDataSource {
             nil
         }
     }
-
 }
+
+//MARK: - CollectionView DataSource & Delegate
+
+extension HomePageViewController: UICollectionViewDataSource, UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        self.addresses.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: AdressCollectionViewCell.reuseIdentifier, for: indexPath) as! AdressCollectionViewCell
+        
+        let model = addresses[indexPath.row]
+        cell.addressModel = model
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let model = addresses[indexPath.row]
+        
+        switch model.addressType {
+        case .available:
+            router?.routeToAddressDetail(with: model)
+           
+        case .notAvailable:
+            router?.routeToProfitAddress()
+        }
+       
+    }
+}
+
+
+//MARK: - TariffBannerTableViewCellDelegate
+
+extension HomePageViewController: TariffBannerTableViewCellDelegate {
+    func goToTariffTab() {
+        if let tabBarController = self.tabBarController {
+            tabBarController.selectedIndex = 2
+        }
+    }
+}
+
+
+

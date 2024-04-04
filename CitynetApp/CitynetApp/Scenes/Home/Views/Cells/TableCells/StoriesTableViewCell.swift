@@ -19,7 +19,7 @@ class StoriesTableViewCell: UITableViewCell {
         let view = UICollectionView(frame: .zero, collectionViewLayout: layout)
         view.contentInset = .init(top: 16, left: 16, bottom: 16, right: 16)
         view.showsHorizontalScrollIndicator = false
-        
+ 
         view.register(StoryCollectionViewCell.self, forCellWithReuseIdentifier: StoryCollectionViewCell.reuseIdentifier)
         view.dataSource = self
       
@@ -28,6 +28,9 @@ class StoriesTableViewCell: UITableViewCell {
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+        self.contentView.layer.cornerRadius = 14
+        self.contentView.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
+        self.contentView.clipsToBounds = true
         self.addSubviews()
     }
     required init?(coder: NSCoder) {

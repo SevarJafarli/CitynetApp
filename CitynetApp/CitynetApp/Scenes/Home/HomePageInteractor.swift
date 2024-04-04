@@ -14,10 +14,12 @@ protocol HomePageBusinessLogic {
 
 protocol HomePageDataStore {
     
-    //var name: String { get set }
+    var addressModel: AddressModel? { get set }
 }
 
 final class HomePageInteractor: HomePageBusinessLogic, HomePageDataStore {
+    var addressModel: AddressModel?
+    
     
     var presenter: HomePagePresentationLogic?
     lazy var worker: HomePageWorkingLogic = HomePageWorker()

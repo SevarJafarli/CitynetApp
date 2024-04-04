@@ -7,9 +7,10 @@
 
 import UIKit
 
-@objc protocol HomePageRoutingLogic {
+protocol HomePageRoutingLogic {
     
-    //func routeToSomewhere()
+    func routeToProfitAddress()
+    func routeToAddressDetail(with model: AddressModel)
 }
 
 protocol HomePageDataPassing {
@@ -24,27 +25,49 @@ final class HomePageRouter: NSObject, HomePageRoutingLogic, HomePageDataPassing 
     
     // MARK: Routing
 
-//    func routeToSomewhere() {
-//        let destinationVC = SomewhereViewController()
-//        SomewhereConfigurator.configure(destinationVC)
-//
-//        var destinationDS = destinationVC.router!.dataStore!
-//        passDataToSomewhere(source: dataStore!, destination: &destinationDS)
-//
-//        navigateToSomewhere(source: viewController!, destination: destinationVC)
-//    }
+    func routeToProfitAddress() {
+        let destinationVC = ProfitAddressDetailViewController()
+        
+        ProfitAddressDetailConfigurator.configure(destinationVC)
+
+        var destinationDS = destinationVC.router!.dataStore!
+        passDataToProfitDetail(source: dataStore!, destination: &destinationDS)
+
+        navigateToProfitDetail(source: viewController!, destination: destinationVC)
+    }
+    
+    func routeToAddressDetail(with model: AddressModel) {
+        let destinationVC = AddressDetailViewController()
+        AddressDetailConfigurator.configure(destinationVC)
+        dataStore?.addressModel = model
+        var destinationDS = destinationVC.router!.dataStore!
+        passDataToAddressDetail(source: dataStore!, destination: &destinationDS)
+
+        navigateToAddressDetail(source: viewController!, destination: destinationVC)
+    }
 
     
     // MARK: Navigation
 
-//    func navigateToSomewhere(source: HomePageViewController, destination: SomewhereViewController) {
-//        source.show(destination, sender: nil)
-//    }
+    func navigateToProfitDetail(source: HomePageViewController, destination: ProfitAddressDetailViewController) {
+        source.show(destination, sender: nil)
+    }
+
+    func navigateToAddressDetail(source: HomePageViewController, destination: AddressDetailViewController) {
+        source.hero.isEnabled = true
+        source.heroModalAnimationType = .fade
+        source.present(destination, animated: true)
+        
+    }
 
     
-    // MARK: Passing data
+//     MARK: Passing data
 
-//    func passDataToSomewhere(source: HomePageDataStore, destination: inout SomewhereDataStore) {
+    func passDataToProfitDetail(source: HomePageDataStore, destination: inout ProfitAddressDetailDataStore) {
 //        destination.name = source.name
-//    }
+    }
+    
+    func passDataToAddressDetail(source: HomePageDataStore, destination: inout AddressDetailDataStore) {
+        destination.addressModel = source.addressModel
+    }
 }

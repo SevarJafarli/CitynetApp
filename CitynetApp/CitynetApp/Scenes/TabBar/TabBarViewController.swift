@@ -20,7 +20,7 @@ final class TabBarViewController: UITabBarController, ThemeableViewController {
     var mainView: TabBarView?
     var interactor: TabBarBusinessLogic?
     var router: (TabBarRoutingLogic & TabBarDataPassing)?
-  
+    
     
     // MARK: - Lifecycle Methods
     
@@ -29,27 +29,25 @@ final class TabBarViewController: UITabBarController, ThemeableViewController {
         self.tabBar.unselectedItemTintColor = adaptiveColor(.slate)
         self.tabBar.tintColor = adaptiveColor(.deepCarmine500)
         self.tabBar.isTranslucent  = false
-  
+        
         let homeVC = MainNavigation(rootViewController: HomePageConfigurator.configure(HomePageViewController()))
     
-        homeVC.barTintColor = adaptiveColor(.navBarColor)
-
         homeVC.tabBarItem = UITabBarItem(title: "Ana səhifə", image: AppAssets.home.load(), tag: 0)
-    
+        
         let supportVC = UIViewController()
         supportVC.tabBarItem = UITabBarItem(title: "Dəstək", image: AppAssets.headphones.load(), tag: 1)
-       
+        
         let tariffsVC = MainNavigation(rootViewController: TariffsConfigurator.configure(TariffsViewController()))
         
         tariffsVC.isTranslucent = false
-       
+        
         tariffsVC.barTintColor = .white
         
         tariffsVC.tabBarItem = UITabBarItem(title: "Tariflər", image: AppAssets.tag.load(), tag: 2)
-
+        
         let moreVC = UIViewController()
         moreVC.tabBarItem = UITabBarItem(title: "Daha çox", image: AppAssets.apps.load(), tag: 3)
-       
+        
         
         let controllers: [UIViewController] = [homeVC, supportVC, tariffsVC, moreVC]
         
@@ -61,13 +59,12 @@ final class TabBarViewController: UITabBarController, ThemeableViewController {
         
         self.load()
         
-        
         self.setupTabBar()
     }
-  
+    
     
     // MARK: - Public Methods
-  
+    
     func load() {
         let request = TabBar.Load.Request()
         interactor?.load(request: request)

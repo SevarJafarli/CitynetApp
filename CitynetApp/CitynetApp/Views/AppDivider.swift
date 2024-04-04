@@ -13,6 +13,10 @@ class AppDivider: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.setupDivider()
+        
+        self.snp.makeConstraints { make in
+            make.height.equalTo(1)
+        }
     }
     
     required init?(coder: NSCoder) {
@@ -22,11 +26,5 @@ class AppDivider: UIView {
     private func setupDivider() {
         self.backgroundColor = adaptiveColor(.borderColor)
     }
-    
-    override func updateConstraints() {
-        super.updateConstraints()
-        self.snp.updateConstraints { make in
-            make.height.equalTo(1)
-        }
-    }
+
 }

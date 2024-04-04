@@ -16,8 +16,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "31"
             endingLineNumber = "31"
-            landmarkName = "TariffInfoView"
-            landmarkType = "3">
+            landmarkName = "bottomCheckoutView"
+            landmarkType = "24">
             <Locations>
                <Location
                   uuid = "56F49B48-03F7-4763-9BE2-5FDDCDB145F6 - 98aaedb42e297ea"
@@ -155,9 +155,152 @@
             filePath = "CitynetApp/CitynetApp/Scenes/Home/HomePageViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "164"
+            endingLineNumber = "164"
+            landmarkName = "tableView(_:viewForHeaderInSection:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3EA2846C-8DE6-49A6-A095-C7DC39F51E92 - c0612469c4fd4a2f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CitynetApp.HomePageViewController.tableView(_: __C.UITableView, viewForHeaderInSection: Swift.Int) -&gt; Swift.Optional&lt;__C.UIView&gt;"
+                  moduleName = "CitynetApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sevarj/Work/CitynetApp/CitynetApp/CitynetApp/Scenes/Home/HomePageViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "150"
+                  endingLineNumber = "150"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "3EA2846C-8DE6-49A6-A095-C7DC39F51E92 - c0612469c4fd4a2f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CitynetApp.HomePageViewController.tableView(_: __C.UITableView, viewForHeaderInSection: Swift.Int) -&gt; Swift.Optional&lt;__C.UIView&gt;"
+                  moduleName = "CitynetApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sevarj/Work/CitynetApp/CitynetApp/CitynetApp/Scenes/Home/HomePageViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "150"
+                  endingLineNumber = "150"
+                  offsetFromSymbolStart = "116">
+               </Location>
+               <Location
+                  uuid = "3EA2846C-8DE6-49A6-A095-C7DC39F51E92 - c0612469c4fd49dd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CitynetApp.HomePageViewController.tableView(_: __C.UITableView, viewForHeaderInSection: Swift.Int) -&gt; Swift.Optional&lt;__C.UIView&gt;"
+                  moduleName = "CitynetApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sevarj/Work/CitynetApp/CitynetApp/CitynetApp/Scenes/Home/HomePageViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "164"
+                  endingLineNumber = "164"
+                  offsetFromSymbolStart = "116">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5FD396FA-A02E-433A-B3C6-CC886F68C330"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CitynetApp/CitynetApp/Scenes/ProfitAddressDetail/ProfitAddressDetailView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
+            landmarkName = "updateConstraints()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D1D3C266-EB32-4CAD-A131-6C9689F108BA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CitynetApp/CitynetApp/Scenes/ProfitAddressDetail/ProfitAddressDetailView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
+            landmarkName = "updateConstraints()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D1D3C266-EB32-4CAD-A131-6C9689F108BA - 1812d8d87d119614"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (SnapKit.ConstraintMaker) -&gt; () in CitynetApp.ProfitAddressDetailView.updateConstraints() -&gt; ()"
+                  moduleName = "CitynetApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sevarj/Work/CitynetApp/CitynetApp/CitynetApp/Scenes/ProfitAddressDetail/ProfitAddressDetailView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "75"
+                  endingLineNumber = "75"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "D1D3C266-EB32-4CAD-A131-6C9689F108BA - 1812d8d87d119614"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (SnapKit.ConstraintMaker) -&gt; () in CitynetApp.ProfitAddressDetailView.updateConstraints() -&gt; ()"
+                  moduleName = "CitynetApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sevarj/Work/CitynetApp/CitynetApp/CitynetApp/Scenes/ProfitAddressDetail/ProfitAddressDetailView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "75"
+                  endingLineNumber = "75"
+                  offsetFromSymbolStart = "36">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DAE31258-B329-45C5-BB35-DDEA38EFBAEA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CitynetApp/CitynetApp/Scenes/ProfitAddressDetail/ProfitAddressDetailViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "didTapBackButton()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C14EBCC3-C203-4070-92DF-2FE5B3307D98"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CitynetApp/CitynetApp/Scenes/ProfitAddressDetail/ProfitAddressDetailView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
             startingLineNumber = "135"
             endingLineNumber = "135"
-            landmarkName = "tableView(_:viewForHeaderInSection:)"
+            landmarkName = "didTapBackButton()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

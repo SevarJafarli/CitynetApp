@@ -18,6 +18,9 @@ public enum AppFonts {
     case SFSubheadlineSemibold
     case SFBodySemibold
     case SFBoldLargeTitle
+    case SFCaption2Semibold
+    case SFTitle2Bold
+    case SFCaption1Regular
 }
 
 extension AppFonts {
@@ -40,6 +43,12 @@ extension AppFonts {
                 .systemFont(ofSize: 17, weight: .semibold)
         case .SFBoldLargeTitle:
                 .systemFont(ofSize: 34, weight: .bold)
+        case .SFCaption2Semibold:
+                .systemFont(ofSize: 11, weight: .semibold)
+        case .SFTitle2Bold:
+                .systemFont(ofSize: 22, weight: .bold)
+        case .SFCaption1Regular:
+                .systemFont(ofSize: 12, weight: .regular)
         }
     }
 }

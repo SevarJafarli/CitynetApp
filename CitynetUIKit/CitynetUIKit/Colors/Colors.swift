@@ -27,10 +27,15 @@ public enum ColorStyle: String, CaseIterable {
     case lightBlue
     case lightYellow
     case lightGrey
+    case lightGrey2
     case borderColor
     case dividerColor
     case appRed
     case navBarColor
+    case cardColor
+    case porcelain
+    case grey08
+    case darkGreen
 }
 
 extension ColorStyle {
