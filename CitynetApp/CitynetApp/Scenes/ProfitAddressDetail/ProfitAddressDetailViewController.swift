@@ -33,8 +33,14 @@ final class ProfitAddressDetailViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         hideNavigationBar(animated: animated)
+        
+        
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.mainView?.animatingCoinsView.startAnimating()
+    }
     
     
     override func viewDidLoad() {
@@ -42,6 +48,8 @@ final class ProfitAddressDetailViewController: UIViewController {
         
         showBackButton = false
         self.load()
+        
+        self.mainView?.animatingCoinsView.startAnimating()
     }
   
     

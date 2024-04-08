@@ -26,7 +26,7 @@ enum AddressStatus {
         case .active:
             ColorStyle.green.load()
         case .pending:
-                .blue
+            UIColor.systemBlue
         }
     }
 }

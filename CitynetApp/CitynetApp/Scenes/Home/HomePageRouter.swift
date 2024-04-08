@@ -54,8 +54,8 @@ final class HomePageRouter: NSObject, HomePageRoutingLogic, HomePageDataPassing 
     }
 
     func navigateToAddressDetail(source: HomePageViewController, destination: AddressDetailViewController) {
-        source.hero.isEnabled = true
-        source.heroModalAnimationType = .fade
+        destination.hero.isEnabled = true
+//        source.heroModalAnimationType = .
         source.present(destination, animated: true)
         
     }

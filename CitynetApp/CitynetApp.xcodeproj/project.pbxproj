@@ -127,6 +127,8 @@
 		C5FB85702BBE9CE7009D9316 /* SingleProfitOfferView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FB856F2BBE9CE7009D9316 /* SingleProfitOfferView.swift */; };
 		C5FB85732BBE9F1A009D9316 /* ProfitOfferType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FB85722BBE9F1A009D9316 /* ProfitOfferType.swift */; };
 		C5FB85752BBEA46F009D9316 /* ProfitWalletContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FB85742BBEA46F009D9316 /* ProfitWalletContentView.swift */; };
+		C5FB858C2BBFC253009D9316 /* CoinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FB858B2BBFC253009D9316 /* CoinView.swift */; };
+		C5FB858E2BBFC2FA009D9316 /* AnimatingCoinsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FB858D2BBFC2FA009D9316 /* AnimatingCoinsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -263,6 +265,8 @@
 		C5FB856F2BBE9CE7009D9316 /* SingleProfitOfferView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleProfitOfferView.swift; sourceTree = "<group>"; };
 		C5FB85722BBE9F1A009D9316 /* ProfitOfferType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfitOfferType.swift; sourceTree = "<group>"; };
 		C5FB85742BBEA46F009D9316 /* ProfitWalletContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfitWalletContentView.swift; sourceTree = "<group>"; };
+		C5FB858B2BBFC253009D9316 /* CoinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinView.swift; sourceTree = "<group>"; };
+		C5FB858D2BBFC2FA009D9316 /* AnimatingCoinsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatingCoinsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -465,6 +469,8 @@
 			children = (
 				C5FB85762BBEA473009D9316 /* ProfitWallet */,
 				C5FB856D2BBE9834009D9316 /* BottomSeeMoreView.swift */,
+				C5FB858B2BBFC253009D9316 /* CoinView.swift */,
+				C5FB858D2BBFC2FA009D9316 /* AnimatingCoinsView.swift */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
@@ -879,6 +885,7 @@
 				C5D1AB962BB3EC4700ABF6D2 /* TariffsInteractor.swift in Sources */,
 				C56A5BF92BBBD82000154969 /* AddressDetailViewController.swift in Sources */,
 				C5FB85752BBEA46F009D9316 /* ProfitWalletContentView.swift in Sources */,
+				C5FB858E2BBFC2FA009D9316 /* AnimatingCoinsView.swift in Sources */,
 				C5389BC72BA9B2B20000E39B /* TabBarView.swift in Sources */,
 				C56A5C2C2BBD821900154969 /* ProfitAddressDetailViewController.swift in Sources */,
 				C56A5C1E2BBD429500154969 /* ProfitWalletView.swift in Sources */,
@@ -886,6 +893,7 @@
 				C56A5BFB2BBBD82000154969 /* AddressDetailView.swift in Sources */,
 				C5FB856A2BBE8EC5009D9316 /* ProfitAddressDetailNavBar.swift in Sources */,
 				C56A5BF82BBBD82000154969 /* AddressDetailModels.swift in Sources */,
+				C5FB858C2BBFC253009D9316 /* CoinView.swift in Sources */,
 				C56A5BDC2BBA8D6500154969 /* AppLighterButton.swift in Sources */,
 				C56A5BD62BBA826D00154969 /* AddressInfoTile.swift in Sources */,
 				C56A5BE62BBAD9B100154969 /* HomePageNavigationView.swift in Sources */,

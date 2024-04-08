@@ -11,7 +11,6 @@ import CitynetUIKit
 class ProfitWalletView: UIView {
     
     let image: UIImage
-
     
     private lazy var walletImage: UIImageView = {
         let view = UIImageView(image: image)
@@ -20,22 +19,15 @@ class ProfitWalletView: UIView {
 
     private let contentView : ProfitWalletContentView = {
         let view = ProfitWalletContentView()
-
         return view
     }()
-    
-
     
     //MARK: Init
     
     init(image: UIImage) {
         self.image = image
         super.init(frame: .zero)
-
         self.addSubviews()
-        
-       
-    
     }
     
     required init?(coder: NSCoder) {
@@ -45,13 +37,12 @@ class ProfitWalletView: UIView {
     private func addSubviews() {
         self.addSubview(self.walletImage)
         self.walletImage.addSubview(self.contentView)
-        
-        
         self.updateConstraints()
     }
     
     override func updateConstraints() {
         super.updateConstraints()
+
         
         self.walletImage.snp.updateConstraints { make in
             make.edges.equalToSuperview()
@@ -66,33 +57,4 @@ class ProfitWalletView: UIView {
     }
 }
 
-
-
-
-class CoinView: UIView {
-    private let imageView: UIImageView = {
-        let imageView = UIImageView()
-        imageView.image = UIImage(named: "coin")
-
-        return imageView
-    }()
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        addSubview(imageView)
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    override func updateConstraints() {
-        super.updateConstraints()
-        
-        self.imageView.snp.updateConstraints { make in
-            make.edges.equalToSuperview()
-            make.height.width.equalTo(40)
-        }
-    }
-}
 

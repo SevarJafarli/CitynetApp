@@ -155,10 +155,10 @@
             filePath = "CitynetApp/CitynetApp/Scenes/Home/HomePageViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "164"
-            endingLineNumber = "164"
-            landmarkName = "tableView(_:viewForHeaderInSection:)"
-            landmarkType = "7">
+            startingLineNumber = "169"
+            endingLineNumber = "169"
+            landmarkName = "HomePageViewController"
+            landmarkType = "21">
             <Locations>
                <Location
                   uuid = "3EA2846C-8DE6-49A6-A095-C7DC39F51E92 - c0612469c4fd4a2f"
@@ -205,6 +205,21 @@
                   endingLineNumber = "164"
                   offsetFromSymbolStart = "116">
                </Location>
+               <Location
+                  uuid = "3EA2846C-8DE6-49A6-A095-C7DC39F51E92 - c0612469c4fd481f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CitynetApp.HomePageViewController.tableView(_: __C.UITableView, viewForHeaderInSection: Swift.Int) -&gt; Swift.Optional&lt;__C.UIView&gt;"
+                  moduleName = "CitynetApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sevarj/Work/CitynetApp/CitynetApp/CitynetApp/Scenes/Home/HomePageViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "166"
+                  endingLineNumber = "166"
+                  offsetFromSymbolStart = "116">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -218,8 +233,8 @@
             filePath = "CitynetApp/CitynetApp/Scenes/ProfitAddressDetail/ProfitAddressDetailView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "78"
-            endingLineNumber = "78"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
             landmarkName = "updateConstraints()"
             landmarkType = "7">
          </BreakpointContent>
@@ -234,8 +249,8 @@
             filePath = "CitynetApp/CitynetApp/Scenes/ProfitAddressDetail/ProfitAddressDetailView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "84"
-            endingLineNumber = "84"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
             landmarkName = "updateConstraints()"
             landmarkType = "7">
             <Locations>
@@ -269,6 +284,21 @@
                   endingLineNumber = "75"
                   offsetFromSymbolStart = "36">
                </Location>
+               <Location
+                  uuid = "D1D3C266-EB32-4CAD-A131-6C9689F108BA - 1812d8d87d119898"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (SnapKit.ConstraintMaker) -&gt; () in CitynetApp.ProfitAddressDetailView.updateConstraints() -&gt; ()"
+                  moduleName = "CitynetApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sevarj/Work/CitynetApp/CitynetApp/CitynetApp/Scenes/ProfitAddressDetail/ProfitAddressDetailView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "87"
+                  endingLineNumber = "87"
+                  offsetFromSymbolStart = "36">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -282,8 +312,8 @@
             filePath = "CitynetApp/CitynetApp/Scenes/ProfitAddressDetail/ProfitAddressDetailViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "69"
-            endingLineNumber = "69"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
             landmarkName = "didTapBackButton()"
             landmarkType = "7">
          </BreakpointContent>
@@ -298,10 +328,73 @@
             filePath = "CitynetApp/CitynetApp/Scenes/ProfitAddressDetail/ProfitAddressDetailView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "135"
-            endingLineNumber = "135"
+            startingLineNumber = "139"
+            endingLineNumber = "139"
             landmarkName = "didTapBackButton()"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0EB691ED-DC26-4F1E-9F47-6E36853087B6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CitynetApp/CitynetApp/Scenes/Home/Views/Cells/CollectionCells/AdressCollectionViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "startAnimation()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "0EB691ED-DC26-4F1E-9F47-6E36853087B6 - e4c7aa1bc65cca92"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CitynetApp.AdressCollectionViewCell.startAnimation() -&gt; ()"
+                  moduleName = "CitynetApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sevarj/Work/CitynetApp/CitynetApp/CitynetApp/Scenes/Home/Views/Cells/CollectionCells/AdressCollectionViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "304">
+               </Location>
+               <Location
+                  uuid = "0EB691ED-DC26-4F1E-9F47-6E36853087B6 - e4c7aa1bc65cca92"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CitynetApp.AdressCollectionViewCell.startAnimation() -&gt; ()"
+                  moduleName = "CitynetApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sevarj/Work/CitynetApp/CitynetApp/CitynetApp/Scenes/Home/Views/Cells/CollectionCells/AdressCollectionViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "172">
+               </Location>
+               <Location
+                  uuid = "0EB691ED-DC26-4F1E-9F47-6E36853087B6 - e4c7aa1bc65cca92"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CitynetApp.AdressCollectionViewCell.startAnimation() -&gt; ()"
+                  moduleName = "CitynetApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sevarj/Work/CitynetApp/CitynetApp/CitynetApp/Scenes/Home/Views/Cells/CollectionCells/AdressCollectionViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "168">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

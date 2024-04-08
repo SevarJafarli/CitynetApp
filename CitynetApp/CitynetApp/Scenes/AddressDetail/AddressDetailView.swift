@@ -55,6 +55,11 @@ final class AddressDetailView: UIView {
         return view
     }()
 
+    private lazy var emptyView: UIView = {
+        let view = UIView()
+        view.backgroundColor = adaptiveColor(.whiteBg)
+        return view
+    }()
     
     //MARK: Init
     
@@ -84,7 +89,7 @@ final class AddressDetailView: UIView {
         
         self.contentStackView.snp.updateConstraints { make in
             make.top.horizontalEdges.equalToSuperview()
-            make.bottom.equalToSuperview().offset(-(71 + 33 - 36)).offset(-128)
+            make.bottom.equalToSuperview().offset(-(71 + 33 - 36))
         }
         
         self.bottomView.snp.updateConstraints { make in
@@ -103,6 +108,10 @@ final class AddressDetailView: UIView {
             make.top.equalToSuperview().offset(24)
             make.horizontalEdges.equalToSuperview().inset(16)
             make.bottom.equalToSuperview()
+        }
+        
+        self.emptyView.snp.updateConstraints { make in
+            make.height.equalTo(96)
         }
     }
     
@@ -130,13 +139,13 @@ final class AddressDetailView: UIView {
         whiteBackView.addSubview(addressActionsView)
         
         self.contentStackView.addArrangedSubview(whiteBackView)
-        
+        self.contentStackView.addArrangedSubview(emptyView)
         self.addSubview(self.bottomView)
         self.updateConstraints()
     }
     
     private func setupUI() {
-        self.backgroundColor = adaptiveColor(.whiteBg)
+        self.backgroundColor = .black
     }
     
     // MARK: - Public

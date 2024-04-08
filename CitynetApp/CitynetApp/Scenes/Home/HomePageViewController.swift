@@ -51,13 +51,18 @@ final class HomePageViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         hideNavigationBar(animated: animated)
+        print("viewWillAppear")
+        mainView?.addressesView.collectionView.reloadData()
+
     }
+ 
     
     //MARK: show navigation bar
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         showNavigationBar(animated: animated)
+
     }
     
     override func viewDidLoad() {
@@ -180,6 +185,8 @@ extension HomePageViewController: UICollectionViewDataSource, UICollectionViewDe
         
         let model = addresses[indexPath.row]
         cell.addressModel = model
+        cell.startAnimation()
+
         return cell
     }
     
@@ -195,6 +202,8 @@ extension HomePageViewController: UICollectionViewDataSource, UICollectionViewDe
         }
        
     }
+    
+
 }
 
 

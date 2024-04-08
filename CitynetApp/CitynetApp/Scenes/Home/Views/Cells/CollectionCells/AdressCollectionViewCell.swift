@@ -9,6 +9,17 @@ import UIKit
 
 
 class AdressCollectionViewCell: UICollectionViewCell {
+    var isEmpty = false
+
+
+       func startAnimation() {
+           profitCardView.animatingCoinsView.startAnimating()
+           
+         isEmpty = profitCardView.animatingCoinsView.subviews.isEmpty
+           print("started animation")
+       }
+
+
     
     var addressModel: AddressModel? {
         didSet {
@@ -16,7 +27,7 @@ class AdressCollectionViewCell: UICollectionViewCell {
         }
     }
     
-    private lazy var profitCardView: AddressProfitCardView = {
+    lazy var profitCardView: AddressProfitCardView = {
         let view = AddressProfitCardView()
         return view
     }()
@@ -68,6 +79,9 @@ class AdressCollectionViewCell: UICollectionViewCell {
     override func prepareForReuse() {
         super.prepareForReuse()
         
+        self.startAnimation()
+        
+//        self.profitCardView.animatingCoinsView.startAnimating()
         //        actionsStackView.arrangedSubviews.map { subview -> Void in
         //            actionsStackView.removeArrangedSubview(subview)
         //            subview.removeFromSuperview()

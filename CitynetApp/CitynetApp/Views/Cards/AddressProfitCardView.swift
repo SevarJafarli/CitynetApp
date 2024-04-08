@@ -30,19 +30,11 @@ class AddressProfitCardView: UIView {
         return view
     }()
     
-    
-    private let coin1 = CoinView()
-    private let coin2 = CoinView()
-    private let coin3 = CoinView()
-   
+    lazy var animatingCoinsView =  AnimatingCoinsView(cardWidth: cardWidth)
     
     
     lazy var cardWidth = UIScreen.main.bounds.width - 32
     
-    lazy var firstPosition = (cardWidth - 256)/2 + 20
-    
-    lazy var secondPosition = firstPosition + 256/2 - 40
-    lazy var thirdPosition = secondPosition + 256/2 - 40
 
     //MARK: Init
     
@@ -52,32 +44,10 @@ class AddressProfitCardView: UIView {
         
         self.addSubviews()
         
-        animateCoins()
+//        self.animatingCoinsView.startAnimating()
 
     }
-    
-    func resetCoinPositions() {
-        self.coin1.frame = .init(x: firstPosition, y: -40, width: 40, height: 40)
-        self.coin2.frame = .init(x: secondPosition, y: -40, width: 40, height: 40)
-        self.coin3.frame = .init(x: thirdPosition, y: -40, width: 40, height: 40)
-    }
-    
-    
-    func animateCoins() {
-        UIView.animate(withDuration: 1, delay: 0, options: [.repeat, .curveEaseIn],  animations: {
-                 self.coin1.frame = CGRect(x: self.firstPosition, y: 120, width: 40, height: 40)
-               })
-                       
-        UIView.animate(withDuration: 1, delay: 0.2, options: [.repeat, .curveEaseIn],  animations: {
-                           self.coin3.frame = CGRect(x: self.thirdPosition, y: 120, width: 40, height: 40)
-                              })
-        
-        UIView.animate(withDuration: 1, delay: 0.4, options: [.repeat, .curveEaseIn],  animations: {
-            self.coin2.frame = CGRect(x: self.secondPosition, y: 120, width: 40, height: 40)
-        })
-        
-    }
-    
+
     required init?(coder: NSCoder) {
         fatalError()
     }
@@ -95,15 +65,9 @@ class AddressProfitCardView: UIView {
         
         self.addSubview(self.bottomSeeMoreView)
     
-       resetCoinPositions()
-        self.addSubview(self.coin1)
-        self.addSubview(self.coin2)
-        self.addSubview(self.coin3)
-        
-        
+        self.addSubview(animatingCoinsView)
         self.addSubview(self.walletView)
-        
-        
+    
        
         self.updateConstraints()
     }

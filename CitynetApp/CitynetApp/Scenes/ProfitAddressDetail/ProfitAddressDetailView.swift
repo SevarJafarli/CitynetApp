@@ -57,6 +57,9 @@ final class ProfitAddressDetailView: UIView {
         let view = ProfitOffersView()
         return view
     }()
+    
+     lazy var animatingCoinsView =  AnimatingCoinsView(cardWidth: UIScreen.main.bounds.width - 32)
+    
 
     
     init() {
@@ -83,7 +86,6 @@ final class ProfitAddressDetailView: UIView {
         self.customNavBar.snp.updateConstraints { make in
             make.top.equalToSuperview().offset(44)
             make.horizontalEdges.equalToSuperview()
-//            make.height.equalTo(92)
         }
         
         self.scrollView.snp.updateConstraints { make in
@@ -112,6 +114,8 @@ final class ProfitAddressDetailView: UIView {
     private func addSubviews() {
         self.addSubview(self.backImageView)
         self.addSubview(self.customNavBar)
+        
+        self.addSubview(self.animatingCoinsView)
         
         self.scrollView.addSubview(self.contentView)
         self.contentView.addSubview(self.contentStackView)
